@@ -8,27 +8,39 @@ const Home = () => {
     <section
       ref={ref}
       id="home"
-      className="w-screen h-screen flex justify-center items-center text-white"
+      className="w-screen h-[90vh] flex flex-col justify-center items-center text-white"
     >
       <video
         autoPlay
         muted
         loop
         playsInline
-        className=" w-full h-full object-cover bg-contain"
+        className=" w-full h-[90vh] object-cover bg-contain "
       >
         <source src={video} type="video/webm" />
       </video>
-      <h1
-        style={{
-          transform: isInView ? 'none' : 'translateX(-200px)',
-          opacity: isInView ? 1 : 0,
-          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-        }}
-        className=" absolute top-[50] right-[50] text-8xl uppercase border-b-4 border-zinc-50 p-5"
-      >
-        Dolac Grad
-      </h1>
+      <div className="text-center w-[30vw] max-w-screen-sm absolute top-[20%] right-[30vw]  flex justify-center items-center flex-col">
+        <h1
+          style={{
+            transform: isInView ? 'none' : 'translateX(-200px)',
+            opacity: isInView ? 1 : 0,
+            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+          }}
+          className=" text-6xl text-center uppercase border-b-4 border-zinc-50 p-5 font-naslov font-bold leading-tight l"
+        >
+          Dolac Grad
+        </h1>
+        <h2
+          style={{
+            transform: isInView ? 'none' : 'translateX(-200px)',
+            opacity: isInView ? 1 : 0,
+            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+          }}
+          className="text-center text-2xl"
+        >
+          Pronađite savršen dom za sebe
+        </h2>
+      </div>
     </section>
   );
 };

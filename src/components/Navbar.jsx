@@ -1,8 +1,14 @@
-import { useRef, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+const navList = [
+  { id: 'home', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'contact', label: 'Contact' },
+];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pageRef = useRef(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -18,57 +24,57 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleItemClick = (sectionId) => {
+    scrollToSection(sectionId);
+    setIsMenuOpen(false); // Close the menu after clicking on an item
+  };
+
   return (
-    <nav className="h-[80px] sticky top-0 flex items-center justify-between z-10 bg-zinc-900 p-[3dvw]">
-      <div className="container mx-auto flex items-center justify-between py-4">
-        <h1 className="text-zinc-50 text-xl">Logo</h1>
-        {/* Hamburger Icon for Mobile */}
-        <div className="block lg:hidden">
-          <button
-            onClick={toggleMenu}
-            className="text-zinc-50 focus:outline-none"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
-        </div>
+    <nav className="bg-zinc-900 h-[80px] w-full  sticky top-0 flex items-center justify-between pr-[4dvw ]  pl-[4dvw] z-10 lg:flex lg:justify-between">
+      <div className="w-[1/2] flex items-center justify-center h-full ">
+        <h1 className="text-zinc-50 text-xl  ">Logo</h1>
       </div>
       {/* Navigation Links */}
+
+      <div className="block lg:hidden pr-4">
+        <button
+          onClick={toggleMenu}
+          className="text-zinc-50 focus:outline-none"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
       <ul
         className={`lg:flex ${
           isMenuOpen ? 'block' : 'hidden'
-        } lg:items-center lg:justify-between gap-10 text-xl p-4 text-zinc-50`}
+        } lg:items-center lg:justify-between lg:gap-10 text-xl p-4 text-zinc-50 lg:flex bg-zinc-900 absolute lg:static top-[60px] left-0 w-screen lg:w-1/2 `}
       >
-        <li
-          className="rounded-md p-1 hover:cursor-pointer hover:scale-110 hover:border hover:border-zinc-50 transition-transform translate-x-2 duration-300 font-medium "
-          onClick={() => scrollToSection('home')}
-        >
-          Home
-        </li>
-        <li
-          className="rounded-md p-1 hover:cursor-pointer hover:scale-110 hover:border hover:border-zinc-50 transition-transform translate-x-2 duration-300 font-medium "
-          onClick={() => scrollToSection('about')}
-        >
-          About
-        </li>
-        <li
-          className="rounded-md p-1 hover:cursor-pointer hover:scale-110 hover:border hover:border-zinc-50 transition-transform translate-x-2 duration-300 font-medium "
-          onClick={() => scrollToSection('contact')}
-        >
-          Contact
-        </li>
+        {navList.map((item) => (
+          <li
+            key={item.id}
+            className={`rounded-sm p-2 hover:bg-zinc-50 hover:text-zinc-900 duration-300 font-medium text-center ${
+              isSmallScreen ? 'text-sm' : ''
+            }`}
+            onClick={() => handleItemClick(item.id)}
+            style={{ width: '100%' }} // Full width on mobile
+          >
+            {item.label}
+          </li>
+        ))}
       </ul>
     </nav>
   );

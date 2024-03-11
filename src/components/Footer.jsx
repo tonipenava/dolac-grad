@@ -28,10 +28,10 @@ const Footer = () => {
     }
   };
   return (
-    <footer className="bg-zinc-900 text-center text-zinc-50 pt-5 pb-5 flex flex-col lg:flex-row lg:justify-around lg:items-center">
+    <footer className=" rounded-t-lg lg:rounded-none  bg-bijela text-center text-smedja pt-5 pb-5 flex flex-col lg:flex-row lg:justify-around lg:items-start">
       <div className="flex flex-col justify-center items-center gap-2 pb-6">
-        <h1 className=" text-2xl font-bold">Kontakt</h1>
-        <hr className="w-16 h-1  bg-zinc-50 " />
+        <h1 className=" text-2xl font-bold ">Kontakt</h1>
+        <hr className="w-16 h-1 rounded-lg border-0  bg-svjetlosmedja " />
         <h2 className=" text-bold">DOLAC GRAD BiH d.o.o.</h2>
         <div className="flex justify-center items-center gap-4">
           <SlLocationPin />
@@ -56,8 +56,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-2">
-        <h1 className="text-2xl font-bold">Links</h1>
-        <hr className="w-16 h-1 bg-zinc-50 " />
+        <h1 className="text-2xl font-bold ">Links</h1>
+        <hr className="w-16 h-1 rounded-lg border-0  bg-svjetlosmedja " />
         <ul className="">
           {navList.map((item) => (
             <li

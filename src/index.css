@@ -12,7 +12,7 @@ body {
 
 .embla {
   height: auto;
-  width: 100vw; /* Default width for larger screens */
+  /* Default width for larger screens */
   margin: auto;
   --slide-height: 10rem;
   --slide-spacing: 2rem;
@@ -21,8 +21,8 @@ body {
 .embla__viewport {
   overflow: hidden;
 }
+
 .embla__container {
-  width: 60%;
   backface-visibility: hidden;
   display: flex;
   touch-action: pan-y;

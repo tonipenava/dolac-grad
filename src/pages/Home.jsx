@@ -26,7 +26,7 @@ const Home = () => {
             opacity: isInView ? 1 : 0,
             transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
           }}
-          className=" text-6xl text-center uppercase border-b-4 border-zinc-50 p-5 font-naslov font-bold leading-tight l"
+          className=" text-6xl text-center uppercase border-b-4 border-zinc-50 p-5 font-bold leading-tight l"
         >
           Dolac Grad
         </h1>

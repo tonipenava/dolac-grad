@@ -18,7 +18,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-screen h-screen bg-zinc-900 flex flex-col justify-center items-center text-zinc-50 font-naslov"
+      className="w-screen h-screen bg-svjetlosmedja flex flex-col justify-center items-center text-zinc-50 font-naslov"
     >
       <h1 className="text-4xl uppercase border-b-2 border-zinc-50">
         Dolac Grad

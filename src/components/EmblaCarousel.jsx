@@ -6,8 +6,8 @@ const EmblaCarousel = (props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   return (
-    <section className="embla ">
-      <div className="embla__viewport" ref={emblaRef}>
+    <section className="embla flex justify-center items-center">
+      <div className="embla__viewport w-[100%] lg:w-[60%]" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((imageUrl, index) => (
             <div className="embla__slide" key={index}>

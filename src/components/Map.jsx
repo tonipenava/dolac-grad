@@ -33,6 +33,7 @@ const Map = () => {
       zoom={18}
       minZoom={3}
       scrollWheelZoom={true}
+      className="z-0"
     >
       <ComponentResize />
       <TileLayer

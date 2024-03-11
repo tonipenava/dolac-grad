@@ -30,17 +30,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-zinc-900 h-[80px] w-full  sticky top-0 flex items-center justify-between pr-[4dvw ]  pl-[4dvw] z-10 lg:flex lg:justify-between">
+    <nav className="bg-bijela h-[10vh] w-full text-zelena sticky top-0 flex items-center justify-between pr-[4dvw ]  pl-[4dvw] z-20 lg:flex lg:justify-between bg-opacity-80">
       <div className="w-[1/2] flex items-center justify-center h-full ">
-        <h1 className="text-zinc-50 text-xl  ">Logo</h1>
+        <h1 className="text-smedja text-xl  ">Logo</h1>
       </div>
       {/* Navigation Links */}
 
       <div className="block lg:hidden pr-4">
-        <button
-          onClick={toggleMenu}
-          className="text-zinc-50 focus:outline-none"
-        >
+        <button onClick={toggleMenu} className="focus:outline-none">
           <svg
             className="w-6 h-6"
             fill="none"
@@ -61,12 +58,12 @@ const Navbar = () => {
       <ul
         className={`lg:flex ${
           isMenuOpen ? 'block' : 'hidden'
-        } lg:items-center lg:justify-between lg:gap-10 text-xl p-4 text-zinc-50 lg:flex bg-zinc-900 absolute lg:static top-[60px] left-0 w-screen lg:w-1/2 `}
+        } lg:items-center lg:justify-between rounded-b-lg lg:gap-10 text-xl p-4 text-smedja  lg:flex bg-bijela opacity-80  lg:bg-transparent absolute lg:static top-[10vh] left-0 w-screen lg:w-1/2 `}
       >
         {navList.map((item) => (
           <li
             key={item.id}
-            className={`rounded-sm p-2 hover:bg-zinc-50 hover:text-zinc-900 duration-300 font-medium text-center ${
+            className={`rounded-sm p-2 hover:bg-zinc-50 hover:text-svjetlosmedja cursor-pointer  duration-300 font-medium text-center ${
               isSmallScreen ? 'text-sm' : ''
             }`}
             onClick={() => handleItemClick(item.id)}

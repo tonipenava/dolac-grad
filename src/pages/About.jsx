@@ -20,9 +20,7 @@ const About = () => {
       id="about"
       className="w-screen h-screen bg-svjetlosmedja flex flex-col justify-center items-center text-zinc-50 font-naslov"
     >
-      <h1 className="text-4xl uppercase border-b-2 border-zinc-50">
-        Dolac Grad
-      </h1>
+      <h1 className="text-4xl uppercase pt-5">Dolac Grad</h1>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
     </section>
   );

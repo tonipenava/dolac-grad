@@ -10,20 +10,24 @@ const ApartmentAccordion = ({ apartment }) => {
   };
 
   return (
-    <div className="border mb-4">
+    <div className="border border-smedja m-2">
       <button
         onClick={toggleAccordion}
-        className="lg:w-[80dvw] p-4 text-left font-semibold"
+        className="  w-full p-4  flex justify-around gap-6 font-semibold "
       >
-        {apartment.name}
+        <p>{apartment.name}</p>
+        <p> {`${apartment.rooms.totalArea} m2`}</p>
       </button>
-      {isOpen && (
-        <div className="p-4 lg:flex lg:flex-row flex-col justify-center items-center ">
+      <div className={`accordion-content ${isOpen ? 'show' : ''}`}>
+        <div className="p-4 lg:flex lg:flex-row flex-col justify-around items-start ">
           <ApartmentPlan />
-          {/* Add images here */}
-          <RoomSizeTable rooms={apartment.rooms} />
+
+          <RoomSizeTable
+            rooms={apartment.rooms}
+            apartmentName={apartment.name}
+          />
         </div>
-      )}
+      </div>
     </div>
   );
 };

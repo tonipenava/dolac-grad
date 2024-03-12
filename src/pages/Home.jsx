@@ -19,27 +19,18 @@ const Home = () => {
       >
         <source src={video} type="video/webm" />
       </video>
-      <div className="text-center w-[30vw] max-w-screen-sm absolute top-[20%] right-[30vw]  flex justify-center items-center flex-col">
-        <h1
-          style={{
-            transform: isInView ? 'none' : 'translateX(-200px)',
-            opacity: isInView ? 1 : 0,
-            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-          }}
-          className=" text-6xl text-center uppercase border-b-4 border-zinc-50 p-5 font-bold leading-tight l"
-        >
+      <div
+        style={{
+          transform: isInView ? 'none' : 'translateX(-200px)',
+          opacity: isInView ? 1 : 0,
+          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+        }}
+        className="text-center w-4/5 rounded-xl max-w-screen-sm absolute flex justify-center items-center flex-col backdrop-blur-lg bg"
+      >
+        <h1 className=" text-6xl text-center uppercase border-b-4 border-zinc-50 p-5 font-bold ">
           Dolac Grad
         </h1>
-        <h2
-          style={{
-            transform: isInView ? 'none' : 'translateX(-200px)',
-            opacity: isInView ? 1 : 0,
-            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-          }}
-          className="text-center text-2xl"
-        >
-          Pronađite savršen dom za sebe
-        </h2>
+        <h2 className="text-center text-2xl">Pronađite savršen dom za sebe</h2>
       </div>
     </section>
   );

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const navList = [
-  { id: 'home', label: 'Home' },
-  { id: 'about', label: 'About' },
+  { id: 'home', label: 'Početna' },
+  { id: 'about', label: 'Galerija' },
   { id: 'contact', label: 'Contact' },
+  { id: 'stanovi', label: 'Stanovi' },
 ];
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       window.scrollTo({
-        top: section.offsetTop,
+        top: section.offsetTop - window.innerHeight * 0.1,
         behavior: 'smooth',
       });
     }
@@ -30,9 +31,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-bijela h-[10vh] w-full text-zelena sticky top-0 flex items-center justify-between pr-[4dvw ]  pl-[4dvw] z-20 lg:flex lg:justify-between bg-opacity-80">
+    <nav className="bg-bijela h-[10vh] w-full text-smedja sticky top-0 flex items-center justify-between pr-[4dvw ]  pl-[4dvw] z-20 lg:flex lg:justify-between bg-opacity-90">
       <div className="w-[1/2] flex items-center justify-center h-full ">
-        <h1 className="text-smedja text-xl  ">Logo</h1>
+        <h1 className=" text-xl  ">Logo</h1>
       </div>
       {/* Navigation Links */}
 
@@ -58,7 +59,7 @@ const Navbar = () => {
       <ul
         className={`lg:flex ${
           isMenuOpen ? 'block' : 'hidden'
-        } lg:items-center lg:justify-between rounded-b-lg lg:gap-10 text-xl p-4 text-smedja  lg:flex bg-bijela opacity-80  lg:bg-transparent absolute lg:static top-[10vh] left-0 w-screen lg:w-1/2 `}
+        } lg:items-center lg:justify-between rounded-b-lg lg:gap-10 text-xl p-4  lg:flex bg-bijela opacity-80  lg:bg-transparent absolute lg:static top-[10vh] left-0 w-screen lg:w-1/3 `}
       >
         {navList.map((item) => (
           <li

@@ -3,9 +3,13 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/livingRoom.jpg')",
+      },
       fontFamily: {
         naslov: ['TeXGyreAdventor', 'sans-serif'],
-        'bebas-neue': ['Bebas Neue', 'sans-serif'],
+        bebasNeue: ['Bebas Neue', 'sans-serif'],
+        textTitle: ['Libre Caslon Text', 'serif'],
       },
       colors: {
         smedja: '#966443',

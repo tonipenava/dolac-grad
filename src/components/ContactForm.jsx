@@ -27,7 +27,7 @@ export const ContactForm = () => {
       .then(
         () => {
           console.log('SUCCESS!');
-          alert(`Your email has been sent successfully.`);
+          alert(`Your email has been sent successfully.👍`);
           setFormData({
             user_name: '',
             user_email: '',
@@ -44,7 +44,7 @@ export const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="flex flex-col gap-y-2 text-2xl  text-bijela "
+      className="flex flex-col gap-y-2 text-2xl lg:w-1/3 w-4/5 text-bijela "
     >
       <label>Name</label>
       <input

@@ -5,12 +5,16 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import Stanovi from './pages/Stanovi';
+import Vision from './pages/Vision';
+import BackgroundElements from './pages/BackgroundElements';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Home />
+      <Vision />
+      <BackgroundElements />
       <Stanovi />
       <About />
       <Contact />

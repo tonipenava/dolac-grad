@@ -7,7 +7,7 @@ const EmblaCarousel = (props) => {
 
   return (
     <section className="embla flex justify-center items-center">
-      <div className="embla__viewport w-[100%] lg:w-[60%]" ref={emblaRef}>
+      <div className="embla__viewport w-[100%] lg:w-[70%]" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((imageUrl, index) => (
             <div className="embla__slide" key={index}>

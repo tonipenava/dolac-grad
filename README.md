@@ -1,6 +1,6 @@
 # React + Vite + Tailwind + Framer 
-npm install 
-npm run dev
+-npm install 
+-npm run dev
 
 Netlify:
 https://dolac-grad.netlify.app/

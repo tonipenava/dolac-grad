@@ -26,27 +26,28 @@ const Map = () => {
   });
 
   return (
-    <MapContainer
-      style={{ height: '100%', width: '100%' }}
-      center={position}
-      attributionControl={true}
-      zoom={18}
-      minZoom={3}
-      scrollWheelZoom={true}
-      className="z-0"
-    >
-      <ComponentResize />
-      <TileLayer
-        // className={'ion-hide'}
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <Marker position={position} icon={customIcon}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
-      </Marker>
-    </MapContainer>
+    <div className="w-[80vw] h-[40vh] z-0 lg:w-[35vw] lg:h-[69vh]">
+      <MapContainer
+        style={{ height: '100%', width: '100%' }}
+        center={position}
+        attributionControl={true}
+        zoom={17}
+        minZoom={3}
+        scrollWheelZoom={true}
+      >
+        <ComponentResize />
+        <TileLayer
+          // className={'ion-hide'}
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Marker position={position} icon={customIcon}>
+          <Popup>
+            A pretty CSS3 popup. <br /> Easily customizable.
+          </Popup>
+        </Marker>
+      </MapContainer>
+    </div>
   );
 };
 

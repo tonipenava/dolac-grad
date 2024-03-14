@@ -17,6 +17,7 @@ body {
 .textStanovi {
   text-shadow: 2px 2px black;
 }
+
 /*imageHover*/
 .map-area:hover {
   cursor: pointer;

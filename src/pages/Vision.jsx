@@ -22,13 +22,15 @@ const Vision = () => {
           Vaša vizija - naša izgradnja
         </h1>
         <h2 className="text-2xl font-medium">Stambeno poslovni prostor </h2>
-        <p className="text-lg text-justify">
+        <p className="text-sm text-justify">
           Royal One zgrada je projektovana kao viseporodični kolektivni stambeno
           poslovni objekat, sačinjen od dve lamele Lamela A i Lamela B,
-          spratnosti: podrum, prizemlje i pet tipskih etaža o+P+5. Nalazi se u
-          ulici Frane Supila u Banjoj Luci. Ovaj kompleks nudi različite vrste
-          stanova koji su dizajnirani da udovolje visokim standardima i pruže
-          udoban i luksuzan životni prostor.
+          spratnosti: podrum, prizemlje i pet tipskih etaža o+P+5.
+        </p>
+        <p>
+          Nalazi se u ulici Frane Supila u Banjoj Luci. Ovaj kompleks nudi
+          različite vrste stanova koji su dizajnirani da udovolje visokim
+          standardima i pruže udoban i luksuzan životni prostor.
         </p>
       </div>
       <div
@@ -42,7 +44,7 @@ const Vision = () => {
         <img
           src={zgradaIzvana}
           alt="Building"
-          className="border-t-8 border-r-8 p-8 border-svjetlozelena "
+          className="border-t-8 border-r-8 p-8 border-svjetlozelena broder- "
         />
       </div>
     </section>

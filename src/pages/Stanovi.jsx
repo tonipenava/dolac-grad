@@ -1,6 +1,7 @@
 import ApartmentAccordion from '../components/ApartmentAccordion';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
+import ApartmentGrid from '../components/ApartmentGrid';
 const Stanovi = () => {
   const apartments = [
     {
@@ -89,9 +90,7 @@ const Stanovi = () => {
         </h1>
       </div>
       <div>
-        {apartments.map((apartment) => (
-          <ApartmentAccordion key={apartment.id} apartment={apartment} />
-        ))}
+        <ApartmentGrid apartments={apartments} />
       </div>
     </section>
   );

@@ -59,7 +59,7 @@ export const ContactForm = () => {
         value={formData.user_name}
         onChange={handleChange}
         required
-        className="w-full p-2 placeholder:font-thin placeholder:text-black text-black border-b-2 border-crna bg-transparent "
+        className="w-full  outline-none     p-2 placeholder:font-thin placeholder:text-black text-black border-b-2 border-crna bg-transparent "
       />
       <label>Email</label>
       <input

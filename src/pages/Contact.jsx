@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-screen  bg-bijela lg:flex-row flex flex-col justify-center items-center text-zinc-900 text-5xl p-5 gap-10 "
+      className="w-screen  bg-bijela lg:flex-row flex flex-col justify-center items-center text-zinc-900 text-5xl pt-10 p-5 gap-10 "
     >
       <Map />
       <ContactForm />

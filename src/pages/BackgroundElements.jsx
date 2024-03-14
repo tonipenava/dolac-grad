@@ -7,8 +7,8 @@ import Number from '../components/Number';
 
 const BackgroundElements = () => {
   return (
-    <div className="w-dvw h-[40vh] bg-[url('/src/assets/livingRoom.jpg')] lg:bg-fixed lg:bg-cover lg:bg-center bg-no-repeat bg-cover shadow-inner ">
-      <div className="w-full h-full bg-bijela bg-opacity-60 lg:flex grid grid-cols-3 gap-4 lg:justify-evenly justify-evenly text-black font-semibold lg:text-2xl text-lg">
+    <div className="w-   h-[40vh] bg-[url('/src/assets/livingRoom.jpg')] lg:bg-fixed lg:bg-cover lg:bg-center bg-no-repeat bg-cover shadow-inner ">
+      <div className="w-full h-full bg-bijela bg-opacity-60 lg:flex grid grid-cols-3 gap-4 lg:justify-evenly justify-evenly text-black font-semibold lg:text-2xl text-sm">
         <div className="flex flex-col justify-center items-center gap-2  text-center">
           <img src={icon1} alt="apartments" className="lg:w-[6dvw]  w-1/2" />
           <h2>Broj stanova</h2>
@@ -38,7 +38,11 @@ const BackgroundElements = () => {
           </h3>
         </div>
         <div className="flex flex-col justify-center items-center gap-2 text-center">
-          <img src={icon5} alt="apartments" className="lg:w-[6dvw] w-1/2" />
+          <img
+            src={icon5}
+            alt="apartments"
+            className="lg:w-[6dvw] w-1/2 bg-blend-darken"
+          />
           <h2>Garažnih mjesta</h2>
           <h3 className="text-4xl font-bold text-zelena">
             <Number n={8} />

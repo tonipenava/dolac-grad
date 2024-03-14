@@ -13,15 +13,14 @@ const ApartmentAccordion = ({ apartment }) => {
     <div className="border-2 border-smedja m-2 rounded-3xl">
       <button
         onClick={toggleAccordion}
-        className="  w-full p-4  flex justify-around gap-6 font-semibold "
+        className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 font-semibold"
       >
-        <p>{apartment.name}</p>
-        <p> {`${apartment.rooms.totalArea} m2`}</p>
+        <div>{apartment.name}</div>
+        <div>{`${apartment.rooms.totalArea} m2`}</div>
       </button>
       <div className={`accordion-content ${isOpen ? 'show' : ''}`}>
-        <div className="p-4 lg:flex lg:flex-row flex-col justify-around items-start ">
+        <div className="p-4 lg:grid lg:grid-cols-2 gap-4">
           <ApartmentPlan />
-
           <RoomSizeTable
             rooms={apartment.rooms}
             apartmentName={apartment.name}

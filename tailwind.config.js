@@ -17,7 +17,7 @@ export default {
         bez: '#E6C5AD',
         zelena: '#334226',
         svjetlozelena: '#588764',
-        bijela: '#fafafa',
+        bijela: '#FEFFF7 ',
       },
     },
   },

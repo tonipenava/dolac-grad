@@ -10,7 +10,7 @@ const ApartmentAccordion = ({ apartment }) => {
   };
 
   return (
-    <div className="border border-smedja m-2">
+    <div className="border-2 border-smedja m-2 rounded-3xl">
       <button
         onClick={toggleAccordion}
         className="  w-full p-4  flex justify-around gap-6 font-semibold "

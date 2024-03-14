@@ -27,7 +27,7 @@ const Map = () => {
 
   return (
     <MapContainer
-      style={{ height: '60vh', width: '50vw' }}
+      style={{ height: '100%', width: '100%' }}
       center={position}
       attributionControl={true}
       zoom={18}

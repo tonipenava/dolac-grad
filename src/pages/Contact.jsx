@@ -5,6 +5,7 @@ import slika4 from '../assets/4.jpeg';
 import slika5 from '../assets/5.jpeg';
 import slika6 from '../assets/6.jpeg';
 import ContactForm from '../components/ContactForm';
+import MapContainer from '../components/Map';
 import Map from '../components/Map';
 
 const Contact = () => {
@@ -12,7 +13,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-screen  bg-svjetlosmedja lg:flex-row flex flex-col  justify-center items-center text-zinc-900 text-5xl p-5 gap-10 "
+      className="w-screen  bg-bijela lg:flex-row flex flex-col justify-center items-center text-zinc-900 text-5xl p-5 gap-10 "
     >
       <Map />
       <ContactForm />

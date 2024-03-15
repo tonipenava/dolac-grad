@@ -44,7 +44,7 @@ export const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="flex flex-col items-center text-xl lg:w-1/3 w-4/5 text-bijela border-4 border-svjetlozelena p-4 font-thin"
+      className="flex flex-col items-center text-xl lg:w-1/3 w-4/5 text-bijela border-4 border-svjetlozelena p-4 font-thin rounded-tr-3xl"
     >
       <h1 className="text-2xl text-black font-semibold">Pošalji upit</h1>
       <p className="text-sm text-black">
@@ -84,7 +84,7 @@ export const ContactForm = () => {
       <input
         type="submit"
         value="pošalji"
-        className=" bg-svjetlozelena w-1/2 cursor-pointer rounded-md mt-3 placeholder:text-black text-black uppercase"
+        className=" bg-svjetlozelena w-1/2 cursor-pointer text-sm p-2 rounded-md mt-3 placeholder:text-black text-white hover:bg-zelena uppercase"
       />
     </form>
   );

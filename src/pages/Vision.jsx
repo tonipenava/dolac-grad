@@ -1,14 +1,14 @@
-import zgradaIzvana from '../assets/zgradaIzvana.jpg';
+import zgradaIzvana from '../assets/1.png';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
 const Vision = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { triggerOnce: true });
   return (
     <section
       ref={ref}
-      className="bg-bijela lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-4 p-10 lg:p-20 lg:pr-40 lg:pl-40 w-screen"
+      className=" lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-4 p-10 lg:p-20 lg:pr-40 lg:pl-40 w-screen"
     >
       <div
         className=" lg:w-[30vw] w-[90%] h-full flex flex-col items-center justify-center gap-4"
@@ -34,7 +34,7 @@ const Vision = () => {
         </p>
       </div>
       <div
-        className="lg:w-3/5 w-full pt-6 "
+        className="lg:w-[55vw] w-full pt-6 "
         style={{
           transform: isInView ? 'none' : 'translateX(+200px)',
           opacity: isInView ? 1 : 0,

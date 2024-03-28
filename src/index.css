@@ -13,16 +13,14 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-}
-.textStanovi {
-  text-shadow: 2px 2px black;
+  background: #d8d2c7;
 }
 
 /*imageHover*/
 .map-area:hover {
   cursor: pointer;
   opacity: 0.5;
-  color: 'FFFFF'; /* Adjust the opacity to change the color intensity */
+  color: 'FFFFF';
 }
 /* accordion.css */
 .accordion-content {
@@ -31,18 +29,14 @@ body {
   transition: max-height 0.4s ease-out;
 }
 
-.accordion-content.show {
-  max-height: 1000px; /* Adjust as needed */
-}
 /*EMBLA Carousel CSS*/
 
 .embla {
   height: auto;
-  /* Default width for larger screens */
   margin: auto;
   --slide-height: 10rem;
   --slide-spacing: 2rem;
-  --slide-size: 100%;
+  --slide-size: 80%;
 }
 .embla__viewport {
   overflow: hidden;

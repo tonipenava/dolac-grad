@@ -31,7 +31,7 @@ const Map = () => {
         style={{ height: '100%', width: '100%' }}
         center={position}
         attributionControl={true}
-        zoom={17}
+        zoom={16}
         minZoom={3}
         scrollWheelZoom={true}
       >

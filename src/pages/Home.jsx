@@ -1,9 +1,9 @@
-import video from '../assets/urbani_vrtovi.webm';
+import video from '../assets/dolac_grad_video.mp4';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 const Home = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref);
   return (
     <section
       ref={ref}
@@ -17,7 +17,7 @@ const Home = () => {
         playsInline
         className=" w-full h-[90vh] object-cover bg-contain "
       >
-        <source src={video} type="video/webm" />
+        <source src={video} type="video/mp4" />
       </video>
       <div
         style={{
@@ -28,7 +28,7 @@ const Home = () => {
         className="text-center w-4/5 rounded-xl max-w-screen-sm absolute flex justify-center items-center flex-col backdrop-blur-lg bg"
       >
         <h1 className=" text-6xl text-center uppercase border-b-4 border-zinc-50 p-5 font-bold ">
-          Dolac Grad
+          Dolac grad
         </h1>
         <h2 className="text-center text-2xl">Pronađite savršen dom za sebe</h2>
       </div>

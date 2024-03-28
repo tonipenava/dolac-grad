@@ -12,10 +12,10 @@ export default {
         textTitle: ['Libre Caslon Text', 'serif'],
       },
       colors: {
-        smedja: '#966443',
+        smedja: '#5F574A',
         svjetlosmedja: '#D3AC8B',
         bez: '#E6C5AD',
-        zelena: '#334226',
+        zelena: '#374832',
         svjetlozelena: '#588764',
         bijela: '#FEFFF7 ',
       },

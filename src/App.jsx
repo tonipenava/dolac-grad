@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import Stanovi from './pages/Stanovi';
 import Vision from './pages/Vision';
 import BackgroundElements from './pages/BackgroundElements';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
       <Navbar />
       <Home />
       <Vision />
+      <Gallery />
       <BackgroundElements />
       <Stanovi />
-      <About />
       <Contact />
       <Footer />
     </BrowserRouter>

@@ -28,7 +28,7 @@ const Footer = () => {
     }
   };
   return (
-    <footer className=" rounded-t-lg lg:rounded-none border-t-2 border-svjetlozelena bg-bijela text-center text-smedja pt-5 pb-5 flex flex-col lg:flex-row lg:justify-around lg:items-start">
+    <footer className=" rounded-t-lg lg:rounded-none border-t-2 border-svjetlozelena bg-bijela text-center text-zinc-900  pt-5 pb-5 flex flex-col lg:flex-row lg:justify-center lg:gap-[30%] lg:items-start font-bebasNeue ">
       <div className="flex flex-col justify-center items-center gap-2 pb-6">
         <h1 className=" text-2xl font-bold ">Kontakt</h1>
         <hr className="w-16 h-1 rounded-lg border-0  bg-svjetlozelena " />

@@ -15,7 +15,7 @@ const Stanovi = () => {
             opacity: isInView ? 1 : 0,
             transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s',
           }}
-          className="textStanovi text-4xl font-bold text-zinc-900 text-center w-[80%]"
+          className="textStanovi text-4xl pt-4 font-bold text-zinc-900 text-center w-[80%]"
         >
           Odaberite stan koji odgovara vašim potrebama
         </h1>

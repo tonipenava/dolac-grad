@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 const navList = [
   { id: 'home', label: 'Početna' },
   { id: 'gallery', label: 'Galerija' },
-  { id: 'contact', label: 'Contact' },
   { id: 'stanovi', label: 'Stanovi' },
+  { id: 'contact', label: 'Contact' },
 ];
 
 const Navbar = () => {

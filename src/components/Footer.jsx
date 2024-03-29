@@ -62,7 +62,7 @@ const Footer = () => {
           {navList.map((item) => (
             <li
               key={item.id}
-              className="rounded-sm p-2 hover:bg-zinc-50 hover:text-zinc-900 duration-300 font-medium text-center "
+              className="rounded-sm p-2 hover:bg-svjetlozelena hover:text-bijela duration-300 font-medium text-center cursor-pointer"
               onClick={() => handleItemClick(item.id)}
             >
               {item.label}

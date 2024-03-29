@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import Stanovi from './pages/Stanovi';
 import Vision from './pages/Vision';
+import Vision2 from './pages/Vision2';
+
 import BackgroundElements from './pages/BackgroundElements';
 import Gallery from './pages/Gallery';
 
@@ -14,6 +16,7 @@ function App() {
       <Navbar />
       <Home />
       <Vision />
+      <Vision2 />
       <Gallery />
       <BackgroundElements />
       <Stanovi />

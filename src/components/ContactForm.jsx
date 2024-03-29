@@ -44,7 +44,7 @@ export const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="flex flex-col items-center text-xl lg:w-1/3 w-4/5 text-bijela border-4 border-svjetlozelena p-4 font-thin rounded-tr-3xl rounded-bl-3xl"
+      className="flex flex-col items-center text-xl lg:w-1/3 w-4/5 bg-bijela border-4 border-svjetlozelena p-4 font-thin rounded-tr-3xl rounded-bl-3xl"
     >
       <h1 className="text-2xl text-black font-semibold">Pošalji upit</h1>
       <p className="text-sm text-black">

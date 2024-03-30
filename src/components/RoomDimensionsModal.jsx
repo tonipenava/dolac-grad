@@ -21,7 +21,7 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
   } = apartment;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 w-screen">
+    <div className="fixed inset-0 flex items-center justify-center z-50 w-screen overflow-hidden">
       <div className="absolute inset-0 bg-black opacity-50 "></div>
       <div className="relative bg-white rounded-br-xl rounded-tl-xl w-[90%] h-[90%] scroll-m-0 flex p-5 overflow-y-auto">
         <button className="absolute top-0 right-0 p-2" onClick={onClose}>
@@ -40,26 +40,27 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
           </svg>
         </button>
         <div className="flex flex-col ">
-          <h3 className="text-3xl font-medium leading-6 text-zelena text-center ">
+          <h3 className="text-3xl font-medium leading-6 text-zelena text-center p-5 ">
             {apartment.sobnost} stan
           </h3>
-          <div className="lg:flex lg:flex-row flex-col  justify-center items-center">
-            <div className="flex justify-center items-center w-[50%] mx-auto">
+          <div className="lg:flex lg:flex-row flex-col  justify-center items-center w-100%">
+            <div className="flex justify-center items-center lg:w-[65%] mx-auto">
               <img
                 src={plan_image}
                 alt={`Plan for Apartment ${apartment.number}`}
-                className="max-w-full h-auto"
+                className="lg:w-full lg:h-auto w-full"
               />
             </div>
-            <div className="mt-4 p-5 w-[30%] h-full flex flex-col gap-4">
-              <div className="text-xl font-semibold mb-2 flex justify-around items-center">
-                <h2>Dimenzije soba</h2>S{apartment.tip}
+            <div className="mt-4 p-5 lg:w-[30%]  h-full flex flex-col gap-4">
+              <div className="text-2xl font-semibold mb-2 flex justify-around items-center">
+                <h2>Dimenzije soba</h2>
+                Tip stana: S{apartment.tip}
               </div>
 
-              <table className="w-full border-spacing-1 border-2 text-center ">
-                <thead className="border-2 border-black">
+              <table className="w-full border-spacing-1 border-none text-center ">
+                <thead className="border-2 border-zelena">
                   <tr>
-                    <th className="px-4 py-2">Soba</th>
+                    <th className="px-4 py-2 ">Soba</th>
                     <th className="px-4 py-2">
                       m<sup>2</sup>
                     </th>
@@ -129,7 +130,7 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img src={planZgrade} className="w-[60%] h-50%" />
+            <img src={planZgrade} className="lg:w-[60%] h-50%" />
           </div>
         </div>
       </div>

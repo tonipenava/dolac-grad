@@ -44,7 +44,7 @@ const Vision = () => {
         <img
           src={zgradaIzvana}
           alt="Building"
-          className="border-t-8 border-r-8 p-8 border-svjetlozelena"
+          className="border-t-8 border-r-8 p-4 border-svjetlozelena"
         />
       </div>
     </section>

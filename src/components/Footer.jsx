@@ -11,9 +11,10 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const navList = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'home', label: 'Početna' },
+    { id: 'gallery', label: 'Galerija' },
+    { id: 'stanovi', label: 'Stanovi' },
+    { id: 'contact', label: 'Kontakt' },
   ];
   const handleItemClick = (sectionId) => {
     scrollToSection(sectionId);
@@ -22,7 +23,7 @@ const Footer = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       window.scrollTo({
-        top: section.offsetTop,
+        top: section.offsetTop - window.innerHeight * 0.11,
         behavior: 'smooth',
       });
     }

@@ -8,7 +8,7 @@ const Stanovi = () => {
 
   return (
     <section ref={ref} id="stanovi">
-      <div className="w-full h-[full] flex justify-center items-center flex-col text-centar">
+      <div className="w-full h-[full] flex justify-center items-center flex-col text-centar overflow-hidden">
         <h1
           style={{
             transform: isInView ? 'none' : 'translateY(+200px)',

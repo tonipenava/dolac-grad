@@ -43,7 +43,7 @@ const Map = () => {
         />
         <Marker position={position} icon={customIcon}>
           <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
+            Dolac Grad <br /> Križanje Zagrebačke i Mile Bošnjaka
           </Popup>
         </Marker>
       </MapContainer>

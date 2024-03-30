@@ -22,14 +22,14 @@ const ApartmentList = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <div className="w-screen">
+    <div className="w-screen overflow-hidden">
       {stanoviConstants.floors.map((floor) => (
         <div
           key={floor.floor_number}
-          className="flex flex-col items-center justify-center   p-2 m-2"
+          className="flex flex-col items-center justify-center  p-2 m-2"
         >
-          <div className=" pt-4 pb-4">
-            <h2 className="text-center w-screen z-20 text-3xl text-zelena font-naslov">
+          <div className=" pt-4 pb-4 mb-4 flex items-start  border-b-2 border-smedja w-[70%] ">
+            <h2 className="z-20 text-3xl text-smedja relative text-start font-naslov">
               {floor.floor_number}. Kat
             </h2>
           </div>
@@ -38,7 +38,7 @@ const ApartmentList = () => {
               <div
                 style={{ transitionDuration: '0.4s' }}
                 key={apartment.number}
-                className="  flex flex-col w-fit justify-center items-center  text-bijela  bg-svjetlozelena border-2 cursor-pointer shadow-lg hover:shadow-lg hover:shadow-black hover:transform  hover:bg-smedja hover:rounded-bl-xl hover:rounded-tr-xl border-none overflow-hidden "
+                className="  flex flex-col w-fit justify-center items-center  text-bijela bg-svjetlozelena border-2 cursor-pointer shadow-lg hover:shadow-lg hover:shadow-black hover:transform  hover:bg-smedja hover:rounded-bl-xl hover:rounded-tr-xl border-none overflow-hidden "
               >
                 <button onClick={() => handleApartmentClick(apartment)}>
                   <img

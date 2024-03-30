@@ -8,12 +8,12 @@ const Vision = () => {
   return (
     <section
       ref={ref}
-      className=" lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-4 p-10 lg:p-20 lg:pr-40 lg:pl-40 w-screen"
+      className=" lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-4 p-10 lg:p-20 lg:pr-40 lg:pl-40 w-screen "
     >
       <div
         className="lg:w-[55vw] w-full pt-6 "
         style={{
-          transform: isInView ? 'none' : 'translateY(+200px)',
+          transform: isInView ? 'none' : 'translateX(+200px)',
           opacity: isInView ? 1 : 0,
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s',
         }}
@@ -21,13 +21,13 @@ const Vision = () => {
         <img
           src={zgradaIzvana}
           alt="Building"
-          className="border-b-8 border-l-8 p-8 border-svjetlozelena  "
+          className="border-b-8 border-l-8 p-4 border-svjetlozelena  "
         />
       </div>
       <div
         className=" lg:w-[30vw] w-[90%] h-full flex flex-col items-center justify-center gap-4"
         style={{
-          transform: isInView ? 'none' : 'translateY(-200px)',
+          transform: isInView ? 'none' : 'translateX(-200px)',
           opacity: isInView ? 1 : 0,
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}

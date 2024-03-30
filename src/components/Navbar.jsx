@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-
+import logo from '../assets/logo.png';
 const navList = [
   { id: 'home', label: 'Početna' },
   { id: 'gallery', label: 'Galerija' },
   { id: 'stanovi', label: 'Stanovi' },
-  { id: 'contact', label: 'Contact' },
+  { id: 'contact', label: 'Kontakt' },
 ];
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       window.scrollTo({
-        top: section.offsetTop - window.innerHeight * 0.1,
+        top: section.offsetTop - window.innerHeight * 0.11,
         behavior: 'smooth',
       });
     }
@@ -31,8 +31,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-bijela h-[10vh] w-full  sticky top-0 flex items-center justify-between    z-50 lg:flex lg:justify-around bg-opacity-90">
-      <div className="w-[1/2] flex items-center justify-center h-full "></div>
+    <nav className="bg-bijela h-[12vh] w-full  sticky top-0 flex items-center justify-between    z-50 lg:flex lg:justify-around bg-opacity-90">
+      <div className="w-[1/2] ">
+        <img src={logo} alt="Logo" className=" bg-cover h-auto w-52" />
+      </div>
       {/* Navigation Links */}
 
       <div className="block lg:hidden pr-4">

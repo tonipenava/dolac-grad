@@ -21,9 +21,12 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
   } = apartment;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 w-screen overflow-hidden">
-      <div className="absolute inset-0 bg-black opacity-50 "></div>
-      <div className="relative bg-white rounded-br-xl rounded-tl-xl w-[90%] h-[90%] scroll-m-0 flex p-5 overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex justify-center items-center w-screen">
+      <div
+        className="absolute inset-0 bg-black opacity-50 "
+        onClick={onClose}
+      ></div>
+      <div className="relative bg-white rounded-br-xl rounded-tl-xl w-[90%] h-[90%] scroll-m-0 flex flex-col p-5 overflow-y-auto">
         <button className="absolute top-0 right-0 p-2" onClick={onClose}>
           <svg
             className="w-6 h-6 text-gray-600"
@@ -39,7 +42,7 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
             />
           </svg>
         </button>
-        <div className="flex flex-col ">
+        <div className="flex flex-col">
           <h3 className="text-3xl font-medium leading-6 text-zelena text-center p-5 ">
             {apartment.sobnost} stan
           </h3>
@@ -52,9 +55,9 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
               />
             </div>
             <div className="mt-4 p-5 lg:w-[30%]  h-full flex flex-col gap-4">
-              <div className="text-2xl font-semibold mb-2 flex justify-around items-center">
+              <div className="text-2xl font-semibold mb-2 flex flex-col - justify-around items-center">
+                <h2> Tip stana: S{apartment.tip}</h2>
                 <h2>Dimenzije soba</h2>
-                Tip stana: S{apartment.tip}
               </div>
 
               <table className="w-full border-spacing-1 border-none text-center ">

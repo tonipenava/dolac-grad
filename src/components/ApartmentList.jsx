@@ -22,18 +22,18 @@ const ApartmentList = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="w-screen overflow-x-hidden">
       {stanoviConstants.floors.map((floor) => (
         <div
           key={floor.floor_number}
           className="flex flex-col items-center justify-center  p-2 m-2"
         >
-          <div className=" pt-4 pb-4 mb-4 flex items-start  border-b-2 border-smedja w-[70%] ">
+          <div className=" pt-4 pb-4 mb-4 flex items-start  border-b-2 border-smedja w-[80%] ">
             <h2 className="z-20 text-3xl text-smedja relative text-start font-naslov">
               {floor.floor_number}. Kat
             </h2>
           </div>
-          <div className="lg:grid lg:grid-cols-4 gap-8 flex flex-col ">
+          <div className="lg:grid lg:grid-cols-4 gap-8 flex flex-col items-center justify-centar  ">
             {floor.apartments.map((apartment) => (
               <div
                 style={{ transitionDuration: '0.4s' }}
@@ -56,28 +56,28 @@ const ApartmentList = () => {
                     </p>
                   </div>
                   <div className="flex items-center justify-evenly p-2 pt-10  ">
-                    <div className="flex justify-center items-center gap-1">
+                    <div className="flex justify-center items-center gap-1 text-xl ">
                       <p
                         className="
-                      text-xl"
+                      text-2xl"
                       >
                         <RxRulerSquare />
                       </p>
-                      <p>
+                      <p className="text-xl">
                         {apartment.area_sqm} m<sup>2</sup>
                       </p>
                     </div>
                     <div className="flex justify-center items-center gap-1">
-                      <p className="text-xl">
+                      <p className="text-2xl">
                         <IoBedOutline />
                       </p>
-                      <p>{apartment.bedrooms}</p>
+                      <p className="text-xl">{apartment.bedrooms}</p>
                     </div>
-                    <div className="flex justify-center items-center gap-1">
-                      <p>
-                        <PiToilet className="text-xl" />
+                    <div className="flex justify-center items-center gap-1 ">
+                      <p className="text-xl">
+                        <PiToilet />
                       </p>
-                      <p>{apartment.bathrooms}</p>
+                      <p className="text-xl">{apartment.bathrooms}</p>
                     </div>
                   </div>
                 </button>

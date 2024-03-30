@@ -8,14 +8,14 @@ const Vision = () => {
   return (
     <section
       ref={ref}
-      className=" lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-4 p-10 lg:p-20 lg:pr-40 lg:pl-40 w-screen "
+      className="w-screen lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-4 p-10 lg:p-20 lg:pr-40 lg:pl-40 overflow-x-hidden"
     >
       <div
         className="lg:w-[55vw] w-full pt-6 "
         style={{
           transform: isInView ? 'none' : 'translateX(+200px)',
           opacity: isInView ? 1 : 0,
-          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s',
+          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.8s',
         }}
       >
         <img

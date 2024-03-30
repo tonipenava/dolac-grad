@@ -15,7 +15,7 @@ const Navbar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       window.scrollTo({
-        top: section.offsetTop - window.innerHeight * 0.11,
+        top: section.offsetTop - window.innerHeight * 0.12,
         behavior: 'smooth',
       });
     }
@@ -31,9 +31,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-bijela h-[12vh] w-full  sticky top-0 flex items-center justify-between    z-50 lg:flex lg:justify-around bg-opacity-90">
-      <div className="w-[1/2] ">
-        <img src={logo} alt="Logo" className=" bg-cover h-auto w-52" />
+    <nav className="bg-bijela h-[12vh] w-full  sticky top-0 flex items-center justify-between z-50 lg:flex lg:justify-around bg-opacity-90">
+      <div className="w-[1/2]">
+        <img src={logo} alt="Logo" className=" bg-cover h-auto w-48" />
       </div>
       {/* Navigation Links */}
 
@@ -59,7 +59,7 @@ const Navbar = () => {
       <ul
         className={`lg:flex ${
           isMenuOpen ? 'block' : 'hidden'
-        } lg:items-center lg:justify-around rounded-b-lg lg:gap-10 text-xl p-4 text-zinc-900  lg:flex bg-bijela opacity-80  lg:bg-transparent absolute lg:static top-[10vh] left-0 w-screen lg:w-1/3 `}
+        } lg:items-center lg:justify-around rounded-b-lg lg:gap-10 text-xl p-4 text-zinc-900  lg:flex bg-bijela opacity-80  lg:bg-transparent absolute lg:static top-[12vh] left-0 w-screen lg:w-1/3 `}
       >
         {navList.map((item) => (
           <li

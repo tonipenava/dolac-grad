@@ -23,7 +23,7 @@ const Footer = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       window.scrollTo({
-        top: section.offsetTop - window.innerHeight * 0.11,
+        top: section.offsetTop - window.innerHeight * 0.12,
         behavior: 'smooth',
       });
     }

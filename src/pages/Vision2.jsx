@@ -8,14 +8,14 @@ const Vision = () => {
   return (
     <section
       ref={ref}
-      className="w-screen lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-4 p-10 lg:p-20 lg:pr-40 lg:pl-40 overflow-x-hidden"
+      className="w-screen lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-8 p-10 lg:p-20 lg:pr-40 lg:pl-40 overflow-x-hidden"
     >
       <div
-        className="lg:w-[55vw] w-full pt-6 "
+        className="lg:w-[55vw] w-full  "
         style={{
           transform: isInView ? 'none' : 'translateX(+200px)',
           opacity: isInView ? 1 : 0,
-          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.8s',
+          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s',
         }}
       >
         <img
@@ -32,11 +32,13 @@ const Vision = () => {
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
       >
-        <h1 className=" text-4xl font-semibold font-textTitle">
+        <h1 className=" text-4xl font-semibold font-textTitle pt-6">
           Vaša vizija - naša izgradnja
         </h1>
-        <h2 className="text-2xl font-medium">Stambeno poslovni prostor </h2>
-        <p className="text-sm text-justify">
+        <h2 className="text-2xl font-medium pt-4">
+          Stambeno poslovni prostor{' '}
+        </h2>
+        <p className="text-sm text-justify pt-2">
           Royal One zgrada je projektovana kao viseporodični kolektivni stambeno
           poslovni objekat, sačinjen od dve lamele Lamela A i Lamela B,
           spratnosti: podrum, prizemlje i pet tipskih etaža o+P+5.

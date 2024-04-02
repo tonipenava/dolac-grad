@@ -31,9 +31,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-bijela h-[12vh] w-full  sticky top-0 flex items-center justify-between z-50 lg:flex lg:justify-around bg-opacity-90">
-      <div className="w-[1/2]">
-        <img src={logo} alt="Logo" className=" bg-cover h-auto w-48" />
+    <nav className="bg-bijela h-[12vh] w-full  sticky top-0 flex items-center justify-center z-50 lg:flex lg:justify-around bg-opacity-90">
+      <div
+        onClick={() => handleItemClick('home')}
+        className="lg:w-[1/2] w-screen"
+      >
+        <img src={logo} alt="Logo" className=" bg-cover h-auto w-[170px] " />
       </div>
       {/* Navigation Links */}
 

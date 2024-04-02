@@ -40,20 +40,20 @@ const Footer = () => {
         </div>
         <div className="flex justify-center items-center gap-4">
           <SlScreenSmartphone />
-          <h2>+38763XXXXXX</h2>
+          <a href="tel:+387 63 828 541">+387 63 828 541</a>
         </div>
         <div className="flex justify-center items-center gap-4">
           <SlEnvolope />
-          <h2>info@dolacgrad.com</h2>
+          <a href="mailto:info@dolac-grad.ba">info@dolac-grad.com</a>
         </div>
 
         <div className="flex items-center justify-center gap-4">
           <Link to="https://google.com">
             <SlSocialFacebook className=" hover:text-[#316FF6] cursor-pointer" />
           </Link>
-          <Link to="@gmail:toni99penava@gmail.com">
+          <a href="mailto:info@dolac-grad.ba">
             <SlSocialGoogle className="cursor-pointer hover:text-red-600" />
-          </Link>
+          </a>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-2">

@@ -42,14 +42,14 @@ const BackgroundElements = () => {
           <img src={icon4} alt="apartments" className="lg:w-[5dvw] w-1/2" />
           Parking mjesta
           <h3 className="text-4xl font-bold text-zelena">
-            {isInView && <Number classname="text-3xl" n={24} />}
+            {isInView && <Number classname="text-3xl" n={11} />}
           </h3>
         </div>
         <div className="flex flex-col justify-center items-center gap-2 text-center col-span-1">
           <img src={icon5} alt="apartments" className="lg:w-[5dvw] w-1/2 " />
           <h2>Garažnih mjesta</h2>
           <h3 className="text-4xl font-bold text-zelena">
-            {isInView && <Number classname="text-3xl" n={18} />}
+            {isInView && <Number classname="text-3xl" n={8} />}
           </h3>
         </div>
       </div>

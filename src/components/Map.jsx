@@ -15,12 +15,12 @@ const ComponentResize = () => {
 };
 
 const Map = () => {
-  const position = [43.475742676518784, 17.32407758869367];
+  const position = [43.47570432921433, 17.32396325799375];
 
   // Create custom icon
   const customIcon = L.icon({
     iconUrl: CustomMarkerIcon, // Path to your PNG file
-    iconSize: [64, 64], // Size of the icon
+    iconSize: [50, 50], // Size of the icon
     iconAnchor: [16, 32], // Anchor point of the icon
     popupAnchor: [0, -32], // Popup anchor relative to the icon
   });

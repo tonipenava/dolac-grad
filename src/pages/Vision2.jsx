@@ -25,28 +25,33 @@ const Vision = () => {
         />
       </div>
       <div
-        className=" lg:w-[30vw] w-[90%] h-full flex flex-col items-center justify-center gap-4"
+        className=" lg:w-[30vw] w-[90%] h-full flex flex-col items-center justify-center gap-4 text-justify text-lg"
         style={{
           transform: isInView ? 'none' : 'translateX(-200px)',
           opacity: isInView ? 1 : 0,
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
       >
-        <h1 className=" text-4xl font-semibold font-textTitle pt-6">
-          Vaša vizija - naša izgradnja
+        <h1 className=" text-lg pt-6">
+          U podzemnoj etaži Lamele A predviđeno je 10 garažnih mjesta i ostave
+          za stanare. Kolni pristup podzemnoj etaži je preko rampe sa južne
+          strane objekta, a pješački preko stubišta i dizala sa sjeverne strane
+          objekta .
         </h1>
-        <h2 className="text-2xl font-medium pt-4">
-          Stambeno poslovni prostor{' '}
+        <h2 className="text-lg ">
+          Poslovni prostor u prizemlju otvoren je ostakljenim plohama prema jugu
+          a ulaz u poslovne prostore omogućeni su sa istoka i sjevera.
         </h2>
-        <p className="text-sm text-justify pt-2">
-          Royal One zgrada je projektovana kao viseporodični kolektivni stambeno
-          poslovni objekat, sačinjen od dve lamele Lamela A i Lamela B,
-          spratnosti: podrum, prizemlje i pet tipskih etaža o+P+5.
+        <p className="text-lg text-justify">
+          Glavni ulaz u stambeni dio zgrade smješten je u prizemlju, sa sjeverne
+          strane, gdje se ulazi u vertikalnu komunikaciju koja povezuje sve
+          etaže a sastoji se od dvokrakog stubišta i dizala.
         </p>
         <p>
-          Nalazi se u ulici Frane Supila u Banjoj Luci. Ovaj kompleks nudi
-          različite vrste stanova koji su dizajnirani da udovolje visokim
-          standardima i pruže udoban i luksuzan životni prostor.
+          Lamela B je podzemna garaža sa parkiranjem na krovnoj ploči. U
+          podzemnom dijelu nalazi se 8 samostalnih garaža do kojih se dolazi
+          zajedničkom rampom. U nadzemnom dijelu osigurano je 11 parkirnih
+          mjesta , a cijeli objekt se integrira u definirane parterne površine.
         </p>
       </div>
     </section>

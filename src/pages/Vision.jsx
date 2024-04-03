@@ -11,7 +11,7 @@ const Vision = () => {
       className="w-screen lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-4 p-10 lg:p-10 lg:pr-40 lg:pl-40 overflow-x-hidden"
     >
       <div
-        className=" lg:w-[30vw] w-[90%] h-full flex flex-col items-center justify-center gap-4"
+        className=" lg:w-[30vw] w-[90%] h-full flex flex-col items-center justify-center gap-4 text-justify text-lg"
         style={{
           transform: isInView ? 'none' : 'translateX(-200px)',
           opacity: isInView ? 1 : 0,
@@ -19,18 +19,26 @@ const Vision = () => {
         }}
       >
         <h1 className=" text-4xl font-semibold font-textTitle">
-          Vaša vizija - naša izgradnja
+          Dom Iz Snova, Stan U Tvojim Rukama
         </h1>
-        <h2 className="text-2xl font-medium">Stambeno poslovni prostor </h2>
-        <p className="text-sm text-justify">
-          Royal One zgrada je projektovana kao viseporodični kolektivni stambeno
-          poslovni objekat, sačinjen od dve lamele Lamela A i Lamela B,
-          spratnosti: podrum, prizemlje i pet tipskih etaža o+P+5.
-        </p>
+        <h2 className="text-2xl font-medium">Stambeno poslovni prostor</h2>
+        <div className=" text-justify">
+          Stambena zgrada sa poslovnim prostorom u prizemlju smještena je u
+          Ulici Mile Bošnjaka i dio je manje urbane cjeline . Sastoji se od
+          dvije lamele, lamela A i lamela B :
+          <p className=" italic font-semibold">
+            -Lamala A je projektirana kao stambeno poslovni objekt.
+          </p>{' '}
+          <p className="italic font-semibold">
+            -Lamela B je podrumski objekt u kome se nalazi garaža.
+          </p>
+        </div>
         <p>
-          Nalazi se u ulici Frane Supila u Banjoj Luci. Ovaj kompleks nudi
-          različite vrste stanova koji su dizajnirani da udovolje visokim
-          standardima i pruže udoban i luksuzan životni prostor.
+          Lamela A je navedeni objekt pretežito je stambene namjene sa stanovima
+          na pet etaža, dok je etaža prizemlja poslovne namjene, a predviđena je
+          i jedna podzemna etaža u kojoj je smještena garaža. S južne strane
+          nalazi se rampa koja je zajednička za spuštanje u garaže lamele A i
+          lamele B.
         </p>
       </div>
       <div

@@ -36,7 +36,7 @@ const Footer = () => {
         <h2 className=" text-bold">DOLAC GRAD BiH d.o.o.</h2>
         <div className="flex justify-center items-center gap-4">
           <SlLocationPin />
-          <h2>Križanje Zagrebačke i Mile Bošnjaka </h2>
+          <h2>Ulica Mile Bošnjaka </h2>
         </div>
         <div className="flex justify-center items-center gap-4">
           <SlScreenSmartphone />
@@ -48,9 +48,11 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center justify-center gap-4">
-          <Link to="https://google.com">
-            <SlSocialFacebook className=" hover:text-[#316FF6] cursor-pointer" />
-          </Link>
+          {/* 
+<Link to="https://google.com">
+  <SlSocialFacebook className="hover:text-[#316FF6] cursor-pointer" />
+</Link>
+*/}
           <a href="mailto:info@dolac-grad.ba">
             <SlSocialGoogle className="cursor-pointer hover:text-red-600" />
           </a>

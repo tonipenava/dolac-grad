@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/logoGold.png';
 const navList = [
   { id: 'home', label: 'Početna' },
   { id: 'gallery', label: 'Galerija' },
@@ -34,9 +34,9 @@ const Navbar = () => {
     <nav className="bg-bijela h-[12vh] w-full  sticky top-0 flex items-center justify-center z-50 lg:flex lg:justify-around bg-opacity-90">
       <div
         onClick={() => handleItemClick('home')}
-        className="lg:w-[1/2] w-screen"
+        className="lg:w-[1/2] w-screen flex items-center justify-start  lg:pb-3"
       >
-        <img src={logo} alt="Logo" className=" bg-cover h-auto w-[170px] " />
+        <img src={logo} alt="Logo" className=" bg-cover h-auto w-[170px] p-3" />
       </div>
       {/* Navigation Links */}
 

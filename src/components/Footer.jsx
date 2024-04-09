@@ -61,7 +61,7 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-center gap-2">
         <h1 className="text-2xl font-bold ">Linkovi</h1>
         <hr className="w-16 h-1 rounded-lg border-0  bg-svjetlozelena " />
-        <ul className="">
+        <ul className="flex items-center h-20">
           {navList.map((item) => (
             <li
               key={item.id}

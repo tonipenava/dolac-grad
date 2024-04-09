@@ -8,6 +8,7 @@ import Vision from './pages/Vision';
 import Vision2 from './pages/Vision2';
 import BackgroundElements from './pages/BackgroundElements';
 import Gallery from './pages/Gallery';
+import Parking from './pages/Parking';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Home />
       <Vision />
+      <Parking />
       <Vision2 />
       <Gallery />
       <BackgroundElements />

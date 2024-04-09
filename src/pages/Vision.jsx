@@ -18,7 +18,7 @@ const Vision = () => {
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
       >
-        <h1 className=" text-4xl font-semibold font-textTitle">
+        <h1 className=" text-4xl font-semibold font-textTitle text-start">
           Dom Iz Snova, Stan U Tvojim Rukama
         </h1>
         <h2 className="text-2xl font-medium">Stambeno poslovni prostor</h2>

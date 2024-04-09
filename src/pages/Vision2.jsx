@@ -48,7 +48,7 @@ const Vision = () => {
           etaže a sastoji se od dvokrakog stubišta i dizala.
         </p>
         <p>
-          Lamela B je podzemna garaža sa parkiranjem na krovnoj ploči. U
+          <b>Lamela B</b> je podzemna garaža sa parkiranjem na krovnoj ploči. U
           podzemnom dijelu nalazi se 8 samostalnih garaža do kojih se dolazi
           zajedničkom rampom. U nadzemnom dijelu osigurano je 11 parkirnih
           mjesta , a cijeli objekt se integrira u definirane parterne površine.

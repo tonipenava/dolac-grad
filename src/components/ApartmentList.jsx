@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import RoomDimensionsModal from './RoomDimensionsModal';
 import { stanoviConstants } from '../constants/stanoviConstants';
-import { RxRulerSquare } from 'react-icons/rx';
-import { IoBedOutline } from 'react-icons/io5';
-import { PiToilet } from 'react-icons/pi';
+import ruller from '../assets/ruller-w.png';
+import arrow from '../assets/arrow-w.png';
+import bed from '../assets/bed-w.png';
+import toilet from '../assets/toilet-w.png';
 import { useInView } from 'react-intersection-observer';
-import { FaArrowRight } from 'react-icons/fa';
+
 const ApartmentList = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedApartment, setSelectedApartment] = useState(null);
@@ -52,7 +53,7 @@ const ApartmentList = () => {
                       {apartment.sobnost} Stan
                     </h3>
                     <p>
-                      <FaArrowRight />
+                      <img src={arrow} className="w-6 h-6 " />
                     </p>
                   </div>
                   <div className="flex items-center justify-evenly p-2 pt-10  ">
@@ -61,7 +62,7 @@ const ApartmentList = () => {
                         className="
                       text-2xl"
                       >
-                        <RxRulerSquare />
+                        <img src={ruller} alt="Size" className="w-6 h-6 " />{' '}
                       </p>
                       <p className="text-xl">
                         {apartment.area_sqm} m<sup>2</sup>
@@ -69,13 +70,13 @@ const ApartmentList = () => {
                     </div>
                     <div className="flex justify-center items-center gap-1">
                       <p className="text-2xl">
-                        <IoBedOutline />
+                        <img src={bed} alt="Bed" className="w-6 h-6 " />
                       </p>
                       <p className="text-xl">{apartment.bedrooms}</p>
                     </div>
                     <div className="flex justify-center items-center gap-1 ">
                       <p className="text-xl">
-                        <PiToilet />
+                        <img src={toilet} alt="toilet" className="w-6 h-6 " />
                       </p>
                       <p className="text-xl">{apartment.bathrooms}</p>
                     </div>

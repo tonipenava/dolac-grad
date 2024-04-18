@@ -37,7 +37,12 @@ body {
   --slide-size: 80%;
 }
 .embla__viewport {
-  overflow: hidden;
+  overflow: auto;
+}
+@media only screen and (min-width: 768px) {
+  .embla__viewport {
+    overflow: visible; /* Set overflow to visible for large devices */
+  }
 }
 
 .embla__container {

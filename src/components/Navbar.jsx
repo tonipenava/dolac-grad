@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logoGold.png';
+import logo from '../assets/logoGold-min.png';
 const navList = [
   { id: 'home', label: 'Početna' },
   { id: 'gallery', label: 'Galerija' },
@@ -60,22 +60,27 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`lg:flex ${
-          isMenuOpen ? 'block' : 'hidden'
-        } lg:items-center lg:justify-around rounded-b-lg lg:gap-10 text-xl p-4 text-zinc-900  lg:flex bg-bijela opacity-80  lg:bg-transparent absolute lg:static top-[12vh] left-0 w-screen lg:w-1/3 `}
+        style={{
+          height: isMenuOpen ? '100vh' : '0px',
+          transition: 'height 0.25s ease-in-out',
+          overflow: 'hidden',
+        }}
+        className={`lg:items-center lg:justify-around rounded-b-lg lg:gap-10 text-xl  text-zinc-900  lg:flex bg-bijela opacity-80  lg:bg-transparent absolute lg:static top-[12vh]  w-screen lg:w-1/3 z-10 grid place-items-center`}
       >
-        {navList.map((item) => (
-          <li
-            key={item.id}
-            className={`rounded-sm p-2 hover:bg-zinc-50 hover:text-svjetzelena cursor-pointer  duration-300 font-medium text-center ${
-              isSmallScreen ? 'text-sm' : ''
-            }`}
-            onClick={() => handleItemClick(item.id)}
-            style={{ width: '100%' }} // Full width on mobile
-          >
-            {item.label}
-          </li>
-        ))}
+        <div>
+          {navList.map((item) => (
+            <li
+              key={item.id}
+              className={`rounded-sm p-2 hover:bg-zinc-50 hover:text-svjetlozelena cursor-pointer  font-medium text-center mt-[-12vh]${
+                isSmallScreen ? 'text-sm' : ''
+              }`}
+              onClick={() => handleItemClick(item.id)}
+              style={{ width: '100%' }} // Full width on mobile
+            >
+              {item.label}
+            </li>
+          ))}
+        </div>
       </ul>
     </nav>
   );

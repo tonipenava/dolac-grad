@@ -2,6 +2,23 @@ import plan1 from '../assets/S1.png';
 import plan2 from '../assets/S2.png';
 import plan3 from '../assets/S3.png';
 import plan4 from '../assets/S4.png';
+import tlocrt1 from '../assets/tlocrti/t1.jpeg';
+import tlocrt2 from '../assets/tlocrti/t2.jpeg';
+import tlocrt3 from '../assets/tlocrti/t3.jpeg';
+import tlocrt4 from '../assets/tlocrti/t4.jpeg';
+import tlocrt5 from '../assets/tlocrti/t5.jpeg';
+import tlocrt6 from '../assets/tlocrti/t6.jpeg';
+import tlocrt7 from '../assets/tlocrti/t7.jpeg';
+import tlocrt8 from '../assets/tlocrti/t8.jpeg';
+import tlocrt9 from '../assets/tlocrti/t9.jpeg';
+import tlocrt10 from '../assets/tlocrti/t10.jpeg';
+import tlocrt11 from '../assets/tlocrti/t11.jpeg';
+import tlocrt12 from '../assets/tlocrti/t12.jpeg';
+import tlocrt13 from '../assets/tlocrti/t13.jpeg';
+import tlocrt14 from '../assets/tlocrti/t14.jpeg';
+import tlocrt15 from '../assets/tlocrti/t15.jpeg';
+import tlocrt16 from '../assets/tlocrti/t16.jpeg';
+
 export const stanoviConstants = {
   floors: [
     {
@@ -16,9 +33,10 @@ export const stanoviConstants = {
           bedrooms_size: 11.39,
           bathrooms_size: 3.97,
           loggia_size: 4.54,
-          tip: 1,
+          tip: 'S1',
           sobnost: 'Jednosoban',
           plan_image: plan1,
+          tlocrt: tlocrt1,
         },
         {
           number: 2,
@@ -35,8 +53,9 @@ export const stanoviConstants = {
           bathrooms_size: 3.71,
           loggia_size: 7.72,
           plan_image: plan2,
-          tip: 2,
+          tip: 'S2',
           sobnost: 'Dvosoban',
+          tlocrt: tlocrt2,
         },
         {
           number: 3,
@@ -52,8 +71,9 @@ export const stanoviConstants = {
           bathrooms_size: 3.37,
           loggia_size: 6.72,
           plan_image: plan3,
-          tip: 3,
+          tip: 'S3',
           sobnost: 'Dvosoban',
+          tlocrt: tlocrt3,
         },
         {
           number: 4,
@@ -70,8 +90,9 @@ export const stanoviConstants = {
           wc_size: 1.73,
           loggia_size: 11.8,
           plan_image: plan4,
-          tip: 4,
+          tip: 'S4',
           sobnost: 'Trosoban',
+          tlocrt: tlocrt4,
         },
       ],
     },
@@ -87,9 +108,10 @@ export const stanoviConstants = {
           bedrooms_size: 11.39,
           bathrooms_size: 3.97,
           loggia_size: 4.54,
-          tip: 1,
+          tip: 'S5',
           sobnost: 'Jednosoban',
           plan_image: plan1,
+          tlocrt: tlocrt5,
         },
         {
           number: 6,
@@ -106,8 +128,9 @@ export const stanoviConstants = {
           bathrooms_size: 3.71,
           loggia_size: 7.72,
           plan_image: plan2,
-          tip: 2,
+          tip: 'S6',
           sobnost: 'Dvosoban',
+          tlocrt: tlocrt6,
         },
         {
           number: 7,
@@ -123,8 +146,9 @@ export const stanoviConstants = {
           bathrooms_size: 3.37,
           loggia_size: 6.72,
           plan_image: plan3,
-          tip: 3,
+          tip: 'S7',
           sobnost: 'Dvosoban',
+          tlocrt: tlocrt7,
         },
         {
           number: 8,
@@ -141,8 +165,9 @@ export const stanoviConstants = {
           wc_size: 1.73,
           loggia_size: 11.8,
           plan_image: plan4,
-          tip: 4,
+          tip: 'S8',
           sobnost: 'Trosoban',
+          tlocrt: tlocrt8,
         },
       ],
     },
@@ -158,9 +183,10 @@ export const stanoviConstants = {
           bedrooms_size: 11.39,
           bathrooms_size: 3.97,
           loggia_size: 4.54,
-          tip: 1,
+          tip: 'S9',
           sobnost: 'Jednosoban',
           plan_image: plan1,
+          tlocrt: tlocrt9,
         },
         {
           number: 10,
@@ -177,8 +203,9 @@ export const stanoviConstants = {
           bathrooms_size: 3.71,
           loggia_size: 7.72,
           plan_image: plan2,
-          tip: 2,
+          tip: 'S10',
           sobnost: 'Dvosoban',
+          tlocrt: tlocrt10,
         },
         {
           number: 11,
@@ -194,8 +221,9 @@ export const stanoviConstants = {
           bathrooms_size: 3.37,
           loggia_size: 6.72,
           plan_image: plan3,
-          tip: 3,
+          tip: 'S11',
           sobnost: 'Dvosoban',
+          tlocrt: tlocrt11,
         },
         {
           number: 12,
@@ -212,8 +240,9 @@ export const stanoviConstants = {
           wc_size: 1.73,
           loggia_size: 11.8,
           plan_image: plan4,
-          tip: 4,
+          tip: 'S12',
           sobnost: 'Trosoban',
+          tlocrt: tlocrt12,
         },
       ],
     },
@@ -229,9 +258,10 @@ export const stanoviConstants = {
           bedrooms_size: 11.39,
           bathrooms_size: 3.97,
           loggia_size: 4.54,
-          tip: 1,
+          tip: 'S13',
           sobnost: 'Jednosoban',
           plan_image: plan1,
+          tlocrt: tlocrt13,
         },
         {
           number: 14,
@@ -248,8 +278,9 @@ export const stanoviConstants = {
           bathrooms_size: 3.71,
           loggia_size: 7.72,
           plan_image: plan2,
-          tip: 2,
+          tip: 'S14',
           sobnost: 'Dvosoban',
+          tlocrt: tlocrt14,
         },
         {
           number: 15,
@@ -265,8 +296,9 @@ export const stanoviConstants = {
           bathrooms_size: 3.37,
           loggia_size: 6.72,
           plan_image: plan3,
-          tip: 3,
+          tip: 'S15',
           sobnost: 'Dvosoban',
+          tlocrt: tlocrt15,
         },
         {
           number: 16,
@@ -283,8 +315,9 @@ export const stanoviConstants = {
           wc_size: 1.73,
           loggia_size: 11.8,
           plan_image: plan4,
-          tip: 4,
+          tip: 'S16',
           sobnost: 'Trosoban',
+          tlocrt: tlocrt16,
         },
       ],
     },

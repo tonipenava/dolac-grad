@@ -18,6 +18,7 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
     laundryroom_size,
     tip,
     sobnost,
+    tlocrt,
   } = apartment;
 
   return (
@@ -56,7 +57,7 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
             </div>
             <div className="mt-4 p-5 lg:w-[30%]  h-full flex flex-col gap-4">
               <div className="text-2xl font-semibold mb-2 flex flex-col - justify-around items-center">
-                <h2> Tip stana: S{apartment.tip}</h2>
+                <h2> Stan: {apartment.tip}</h2>
                 <h2>Dimenzije soba</h2>
               </div>
 
@@ -133,7 +134,7 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img src={planZgrade} className="lg:w-[60%] h-50%" />
+            <img src={tlocrt} className="lg:w-[60%] h-50%" />
           </div>
         </div>
       </div>

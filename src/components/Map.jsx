@@ -3,6 +3,8 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import CustomMarkerIcon from '../assets/marker.png'; // Replace this with the path to your PNG file
+import badge from '../assets/logoGold-Crop.png';
+import image10 from '../assets/10.png';
 
 const ComponentResize = () => {
   const map = useMap();
@@ -15,7 +17,7 @@ const ComponentResize = () => {
 };
 
 const Map = () => {
-  const position = [43.47570432921433, 17.32396325799375];
+  const position = [43.47498797990045, 17.323664998925807];
 
   // Create custom icon
   const customIcon = L.icon({
@@ -31,7 +33,7 @@ const Map = () => {
         style={{ height: '100%', width: '100%' }}
         center={position}
         attributionControl={true}
-        zoom={16}
+        zoom={17}
         minZoom={3}
         scrollWheelZoom={true}
       >
@@ -43,7 +45,18 @@ const Map = () => {
         />
         <Marker position={position} icon={customIcon}>
           <Popup>
-            Dolac Grad <br /> Križanje Zagrebačke i Mile Bošnjaka
+            <div className=" font-textTitle flex flex-col">
+              <div className="flex items-center justify-around">
+                Dolac Grad <img src={badge} alt="Badge" className="w-[40px]" />
+              </div>
+              <br /> Križanje Zagrebačke i Mile Bošnjaka
+              <br />
+              <img
+                src={image10}
+                alt="Dolac Grad"
+                className="m-2 rounded-xl shadow-2xl shadow-black"
+              />
+            </div>
           </Popup>
         </Marker>
       </MapContainer>

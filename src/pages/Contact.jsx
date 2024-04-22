@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-screen  lg:flex-row flex flex-col justify-center items-center text-zinc-900 text-5xl pt-10 p-5 gap-10 "
+      className="w-screen  lg:flex-row flex flex-col justify-center items-center text-zinc-900 text-5xl gap-10 pb-10"
     >
       <Map />
       <ContactForm />

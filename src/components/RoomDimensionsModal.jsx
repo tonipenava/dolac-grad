@@ -58,13 +58,12 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
             <div className="mt-4 p-5 lg:w-[30%]  h-full flex flex-col gap-4">
               <div className="text-2xl font-semibold mb-2 flex flex-col - justify-around items-center">
                 <h2> Stan: {apartment.tip}</h2>
-                <h2>Dimenzije soba</h2>
               </div>
 
               <table className="w-full border-spacing-1 border-none text-center ">
                 <thead className="border-2 border-zelena">
                   <tr>
-                    <th className="px-4 py-2 ">Soba</th>
+                    <th className="px-4 py-2 ">Površina</th>
                     <th className="px-4 py-2">
                       m<sup>2</sup>
                     </th>

@@ -27,14 +27,14 @@ const ApartmentList = () => {
       {stanoviConstants.floors.map((floor) => (
         <div
           key={floor.floor_number}
-          className="flex flex-col items-center justify-center  p-2 m-2"
+          className="flex flex-col items-center justify-center gap-10  "
         >
           <div className=" pt-4 pb-4 mb-4 flex items-start  border-b-2 border-smedja w-[80%] ">
-            <h2 className="z-20 text-3xl text-smedja relative text-start font-naslov">
+            <h2 className="z-20 text-3xl text-smedja relative text-start font-naslov pt-5">
               {floor.floor_number}. Kat
             </h2>
           </div>
-          <div className="lg:grid lg:grid-cols-4 gap-8 flex flex-col items-center justify-centar  ">
+          <div className="lg:grid lg:grid-cols-4 gap-10 flex flex-col items-center justify-centar  ">
             {floor.apartments.map((apartment) => (
               <div
                 style={{ transitionDuration: '0.4s' }}

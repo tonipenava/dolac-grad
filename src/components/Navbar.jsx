@@ -51,7 +51,7 @@ const Navbar = () => {
       {/* Navigation Links */}
 
       {!isSmallScreen && (
-        <ul className="hidden lg:flex lg:items-center lg:justify-around rounded-b-lg lg:gap-10 text-xl text-zinc-900 bg-bijela opacity-80 lg:bg-transparent w-1/3">
+        <ul className="hidden lg:flex lg:items-center lg:justify-around rounded-b-lg lg:gap-10 text-lg text-zinc-900 bg-bijela opacity-80 lg:bg-transparent pr-5">
           {navList.map((item) => (
             <li
               key={item.id}

@@ -8,7 +8,7 @@ const Vision = () => {
   return (
     <section
       ref={ref}
-      className="w-screen lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-8 p-10 lg:p-20 lg:pr-40 lg:pl-40 overflow-x-hidden"
+      className="w-screen lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-8 p-10 lg:p-20 lg:pr-40 lg:pl-40 overflow-x-hidden text-start"
     >
       <div
         className="lg:w-[55vw] w-full  "
@@ -25,7 +25,7 @@ const Vision = () => {
         />
       </div>
       <div
-        className=" lg:w-[30vw] w-[90%] h-full flex flex-col items-center justify-center gap-4 text-justify text-lg"
+        className=" lg:w-[30vw] w-[90%] h-full flex flex-col items-center justify-center gap-4  text-lg"
         style={{
           transform: isInView ? 'none' : 'translateX(-200px)',
           opacity: isInView ? 1 : 0,
@@ -42,7 +42,7 @@ const Vision = () => {
           Poslovni prostor u prizemlju otvoren je ostakljenim plohama prema jugu
           a ulaz u poslovne prostore omogućeni su sa istoka i sjevera.
         </h2>
-        <p className="text-lg text-justify">
+        <p className="text-lg ">
           Glavni ulaz u stambeni dio zgrade smješten je u prizemlju, sa sjeverne
           strane, gdje se ulazi u vertikalnu komunikaciju koja povezuje sve
           etaže a sastoji se od dvokrakog stubišta i dizala.

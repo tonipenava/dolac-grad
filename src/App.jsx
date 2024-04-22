@@ -9,6 +9,7 @@ import Vision2 from './pages/Vision2';
 import BackgroundElements from './pages/BackgroundElements';
 import Gallery from './pages/Gallery';
 import Parking from './pages/Parking';
+import Garage from './pages/Garage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Gallery />
       <BackgroundElements />
       <Stanovi />
+      <Garage />
       <Contact />
       <Footer />
     </BrowserRouter>

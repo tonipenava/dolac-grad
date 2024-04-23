@@ -6,6 +6,7 @@ import {
   SlScreenSmartphone,
   SlLocationPin,
 } from 'react-icons/sl';
+import logo from '../assets/logoGold-min.png';
 
 import { Link } from 'react-router-dom';
 
@@ -37,7 +38,7 @@ const Footer = () => {
           <hr className=" h-1 rounded-lg border-0  bg-svjetlozelena " />
         </div>
         <div>
-          <h2 className=" text-bold">DOLAC GRAD BiH d.o.o.</h2>
+          <h2 className=" text-bold">Dolac Grad d.o.o.</h2>
           <div className="flex justify-center items-center gap-4">
             <SlLocationPin />
             <h2>Ulica Viteza Mile Bošnjaka </h2>
@@ -92,6 +93,7 @@ const Footer = () => {
             </li>
           ))}
         </ul>
+        <img src={logo} alt="Logo" />
       </div>
     </footer>
   );

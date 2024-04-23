@@ -1,5 +1,4 @@
 import garage from '../assets/garage.jpeg';
-import ZoomableImage from '../components/ZoomableImage';
 const Garage = () => {
   return (
     <div className="flex justify-center items-center lg:p-0 ">

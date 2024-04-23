@@ -10,6 +10,7 @@ import BackgroundElements from './pages/BackgroundElements';
 import Gallery from './pages/Gallery';
 import Parking from './pages/Parking';
 import Garage from './pages/Garage';
+import Copyright from './components/Copyrights';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Garage />
       <Contact />
       <Footer />
+      <Copyright />
     </BrowserRouter>
   );
 }

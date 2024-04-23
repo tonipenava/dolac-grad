@@ -32,11 +32,7 @@ const Footer = () => {
   return (
     <footer className=" rounded-t-lg lg:rounded-none border-t-2 border-svjetlozelena bg-bijela text-center text-zinc-900  pt-5 pb-5 flex flex-col lg:flex-row lg:justify-center lg:gap-[30%] lg:items-start font-roboto font-medium ">
       <div className="flex flex-col justify-center items-center gap-2 pb-6 ">
-        <div>
-          {' '}
-          <h1 className=" text-2xl font-bold ">Kontakt</h1>
-          <hr className=" h-1 rounded-lg border-0  bg-svjetlozelena " />
-        </div>
+        <div></div>
         <div>
           <h2 className=" text-bold">Dolac Grad d.o.o.</h2>
           <div className="flex justify-center items-center gap-4">
@@ -79,10 +75,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-2">
-        <h1 className="text-2xl font-bold ">Linkovi</h1>
-        <hr className="w-20 h-1 rounded-lg border-0  bg-svjetlozelena " />
-        <ul className="flex justify-center items-center h-[full] lg:h-[200px] text-xl">
+      <div className="flex flex-col items-center justify-center ">
+        <ul className="flex justify-center items-start pt-4 h-full  text-xl">
           {navList.map((item) => (
             <li
               key={item.id}
@@ -93,7 +87,11 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <img src={logo} alt="Logo" />
+        <img
+          src={logo}
+          alt="Logo"
+          className="bg-contain pl-20 pr-20  lg:w-[450px]"
+        />
       </div>
     </footer>
   );

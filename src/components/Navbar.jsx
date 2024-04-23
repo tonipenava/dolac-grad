@@ -37,7 +37,7 @@ const Navbar = () => {
 
   const handleItemClick = (sectionId) => {
     scrollToSection(sectionId);
-    setIsMenuOpen(false); // Close the menu after clicking on an item
+    setIsMenuOpen(false);
   };
 
   return (
@@ -48,10 +48,9 @@ const Navbar = () => {
       >
         <img src={logo} alt="Logo" className=" bg-cover h-auto w-[170px] p-3" />
       </div>
-      {/* Navigation Links */}
 
       {!isSmallScreen && (
-        <ul className="hidden lg:flex lg:items-center lg:justify-around rounded-b-lg lg:gap-10 text-lg text-zinc-900 bg-bijela opacity-80 lg:bg-transparent pr-5">
+        <ul className="hidden lg:flex lg:items-center lg:justify-start rounded-b-lg lg:gap-10 text-lg text-zinc-900 bg-zelena opacity-80 lg:bg-transparent pr-5">
           {navList.map((item) => (
             <li
               key={item.id}
@@ -90,8 +89,7 @@ const Navbar = () => {
             transition: 'height 0.25s ease-in-out',
             overflow: 'hidden',
           }}
-          className="lg:hidden text-xl text-zinc-900 bg-bijela opacity-80 w-screen h-[88vh] absolute top-[12vh] grid grid-cols-1 grid-rows-5 gap-1 "
-          // Add inline style for grid gap
+          className="lg:hidden text-xl text-zinc-900 bg-bijela opacity-80 w-screen  absolute top-[12vh] grid grid-cols-1 grid-rows-5 gap-1 "
         >
           {navList.map((item) => (
             <li

@@ -7,6 +7,7 @@ export default {
         'hero-pattern': "url('/src/assets/livingRoom.jpg')",
       },
       fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
         naslov: ['TeXGyreAdventor', 'sans-serif'],
         bebasNeue: ['Bebas Neue', 'sans-serif'],
         textTitle: ['Libre Caslon Text', 'serif'],

@@ -29,12 +29,12 @@ const Footer = () => {
     }
   };
   return (
-    <footer className=" rounded-t-lg lg:rounded-none border-t-2 border-svjetlozelena bg-bijela text-center text-zinc-900  pt-5 pb-5 flex flex-col lg:flex-row lg:justify-center lg:gap-[30%] lg:items-start font-bebasNeue ">
+    <footer className=" rounded-t-lg lg:rounded-none border-t-2 border-svjetlozelena bg-bijela text-center text-zinc-900  pt-5 pb-5 flex flex-col lg:flex-row lg:justify-center lg:gap-[30%] lg:items-start font-roboto font-medium ">
       <div className="flex flex-col justify-center items-center gap-2 pb-6 ">
         <div>
           {' '}
           <h1 className=" text-2xl font-bold ">Kontakt</h1>
-          <hr className="w-16 h-1 rounded-lg border-0  bg-svjetlozelena " />
+          <hr className=" h-1 rounded-lg border-0  bg-svjetlozelena " />
         </div>
         <div>
           <h2 className=" text-bold">DOLAC GRAD BiH d.o.o.</h2>
@@ -47,10 +47,14 @@ const Footer = () => {
             <a href="mailto:info@dolac-grad.ba">info@dolac-grad.com</a>
           </div>
         </div>
-        <div className="flex lg:justify-evenly lg:flex-row flex-col items-center gap-8 w-full ">
+        <div
+          className="flex lg:justify-evenly lg:flex-row flex-col items-center gap-2
+         w-full "
+        >
           <div className="jakov  p-3   flex justify-center items-center flex-col gap-2 lg:justify-around w-4/5  lg:w-[200px]">
-            <h1>Jakov Jukić</h1>
             <hr className="w-full h-[2px] bg-zinc-900" />
+
+            <h1>Jakov Jukić</h1>
             <div className="flex justify-center items-center ">
               <SlScreenSmartphone />
               <a href="tel:+387 63 828 541">+387 63 828 541</a>
@@ -59,9 +63,10 @@ const Footer = () => {
               <a href="mailto:jakov@dolac-grad.ba">jakov@dolac-grad.ba</a>
             </div>
           </div>
-          <div className="zdravko  p-5  flex justify-center items-center flex-col gap-2 lg:justify-around w-4/5 lg:w-[200px]">
-            <h1>Zdravko Jukić</h1>
+          <div className="zdravko  p-3  flex justify-center items-center flex-col gap-2 lg:justify-around w-4/5 lg:w-[200px]">
             <hr className="w-full h-[2px] bg-zinc-900" />
+
+            <h1>Zdravko Jukić</h1>
             <div className="flex justify-center items-center ">
               <SlScreenSmartphone />
               <a href="tel:+387 63 790 839">+387 63 790 839</a>
@@ -75,12 +80,12 @@ const Footer = () => {
 
       <div className="flex flex-col items-center justify-center gap-2">
         <h1 className="text-2xl font-bold ">Linkovi</h1>
-        <hr className="w-16 h-1 rounded-lg border-0  bg-svjetlozelena " />
-        <ul className="flex justify-center items-center h-[200px] text-xl">
+        <hr className="w-20 h-1 rounded-lg border-0  bg-svjetlozelena " />
+        <ul className="flex justify-center items-center h-[full] lg:h-[200px] text-xl">
           {navList.map((item) => (
             <li
               key={item.id}
-              className="rounded-sm p-2 hover:bg-svjetlozelena hover:text-bijela duration-300 font-medium text-center cursor-pointer"
+              className="rounded-sm p-2 lg:hover:bg-svjetlozelena lg:hover:text-bijela duration-300 font font-semibold  text-center cursor-pointer text-sm"
               onClick={() => handleItemClick(item.id)}
             >
               {item.label}

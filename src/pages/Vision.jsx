@@ -8,7 +8,7 @@ const Vision = () => {
   return (
     <section
       ref={ref}
-      className="w-screen lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-4 p-10 lg:p-10 lg:pr-40 lg:pl-40 overflow-x-hidden"
+      className="w-screen lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-4 p-10 lg:p-10 lg:pr-40 lg:pl-40 overflow-x-hidden font-josefin"
     >
       <div
         className=" lg:w-[30vw] w-[90%] h-full flex flex-col items-center justify-center gap-4 text-lg text-start"
@@ -18,8 +18,8 @@ const Vision = () => {
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
       >
-        <h1 className=" text-4xl font-semibold font-textTitle text-start">
-          Dom Iz Snova, Stan U Tvojim Rukama
+        <h1 className=" text-4xl font-semibold font-josefin text-start">
+          Pronađite savršen dom za sebe i svoju obitelj!
         </h1>
         <h2 className="text-2xl font-medium text-start">
           Stambeno poslovni prostor
@@ -28,10 +28,10 @@ const Vision = () => {
           Stambena zgrada sa poslovnim prostorom u prizemlju smještena je u
           Ulici Mile Bošnjaka i dio je manje urbane cjeline . Sastoji se od
           dvije lamele, lamela A i lamela B :
-          <p className=" italic font-semibold">
+          <p className=" italic font-bold">
             -Lamala A je projektirana kao stambeno poslovni objekt.
           </p>{' '}
-          <p className="italic font-semibold">
+          <p className="italic font-bold">
             -Lamela B je podrumski objekt u kome se nalazi garaža.
           </p>
         </div>

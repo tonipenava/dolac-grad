@@ -30,7 +30,7 @@ const ApartmentList = () => {
           className="flex flex-col items-center justify-center gap-10  "
         >
           <div className=" pt-4 pb-4 mb-4 flex items-start  border-b-2 border-smedja w-[80%] ">
-            <h2 className="z-20 text-3xl text-smedja relative text-start font-naslov pt-5">
+            <h2 className="z-20 text-3xl text-smedja relative text-start font-josefin  pt-5">
               {floor.floor_number}. Kat
             </h2>
           </div>
@@ -39,7 +39,7 @@ const ApartmentList = () => {
               <div
                 style={{ transitionDuration: '0.4s' }}
                 key={apartment.number}
-                className="  flex flex-col w-fit justify-center items-center  text-bijela bg-svjetlozelena border-2 cursor-pointer shadow-lg hover:shadow-lg hover:shadow-black hover:transform  hover:bg-smedja hover:rounded-bl-3xl hover:rounded-tr-3xl hover:rounded-tl-none hover:rounded-br-none  rounded-br-3xl rounded-tl-3xl border-none overflow-hidden "
+                className="  flex flex-col w-fit justify-center items-center  text-bijela bg-svjetlozelena border-2 cursor-pointer shadow-lg hover:shadow-lg hover:shadow-black hover:transform  hover:bg-smedja hover:rounded-bl-3xl hover:rounded-tr-3xl hover:rounded-tl-none hover:rounded-br-none  rounded-br-3xl rounded-tl-3xl border-none overflow-hidden font-josefin"
               >
                 <button onClick={() => handleApartmentClick(apartment)}>
                   <img

@@ -6,7 +6,7 @@ const Parking = () => {
   return (
     <div
       ref={ref}
-      className="flex flex-col justify-center items-center text-lg text-start"
+      className="flex flex-col justify-center items-center text-lg text-start font-josefin"
       style={{
         transform: isInView ? 'none' : 'translateX(-200px)',
         opacity: isInView ? 1 : 0,

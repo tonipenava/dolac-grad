@@ -30,9 +30,8 @@ const Footer = () => {
     }
   };
   return (
-    <footer className=" rounded-t-lg lg:rounded-none border-t-2 border-svjetlozelena bg-bijela text-center text-zinc-900  pt-5 pb-5 flex flex-col lg:flex-row lg:justify-center lg:gap-[30%] lg:items-start font-roboto font-medium ">
+    <footer className=" rounded-t-lg lg:rounded-none border-t-2 border-svjetlozelena bg-bijela text-center text-zinc-900  pt-5 pb-5 flex flex-col lg:flex-row lg:justify-center lg:gap-[30%] lg:items-start font-josefin font-medium ">
       <div className="flex flex-col justify-center items-center gap-2 pb-6 ">
-        <div></div>
         <div>
           <h2 className=" text-bold">Dolac Grad d.o.o.</h2>
           <div className="flex justify-center items-center gap-4">
@@ -48,7 +47,7 @@ const Footer = () => {
           className="flex lg:justify-evenly lg:flex-row flex-col items-center gap-2
          w-full "
         >
-          <div className="jakov  p-3   flex justify-center items-center flex-col gap-2 lg:justify-around w-4/5  lg:w-[200px]">
+          <div className="  p-3   flex justify-center items-center flex-col gap-2 lg:justify-around w-4/5  lg:w-[200px]">
             <hr className="w-full h-[2px] bg-zinc-900" />
 
             <h1>Jakov Jukić</h1>
@@ -60,7 +59,7 @@ const Footer = () => {
               <a href="mailto:jakov@dolac-grad.ba">jakov@dolac-grad.ba</a>
             </div>
           </div>
-          <div className="zdravko  p-3  flex justify-center items-center flex-col gap-2 lg:justify-around w-4/5 lg:w-[200px]">
+          <div className="  p-3  flex justify-center items-center flex-col gap-2 lg:justify-around w-4/5 lg:w-[200px]">
             <hr className="w-full h-[2px] bg-zinc-900" />
 
             <h1>Zdravko Jukić</h1>
@@ -80,7 +79,7 @@ const Footer = () => {
           {navList.map((item) => (
             <li
               key={item.id}
-              className="rounded-sm p-2 lg:hover:bg-svjetlozelena lg:hover:text-bijela duration-300 font font-semibold  text-center cursor-pointer text-sm"
+              className="rounded-sm p-2 lg:hover:bg-svjetlozelena lg:hover:text-bijela duration-300 font-josefin  font-normal  text-center cursor-pointer text-base"
               onClick={() => handleItemClick(item.id)}
             >
               {item.label}

@@ -16,7 +16,7 @@ const BackgroundElements = () => {
       ref={ref}
       className="   h-[40vh] bg-[url('/src/assets/livingRoom.jpg')] lg:bg-fixed lg:bg-cover lg:bg-center bg-right bg-no-repeat bg-cover shadow-inner overflow-hidden "
     >
-      <div className=" w-[full] h-full bg-bijela bg-opacity-60 lg:flex grid grid-cols-3 grid-rows-2  gap-4 lg:justify-center lg:gap-8 justify-center text-black font-semibold lg:text-2xl text-sm p-2">
+      <div className=" w-[full] h-full bg-bijela bg-opacity-60 lg:flex grid grid-cols-3 grid-rows-2  gap-4 lg:justify-center lg:gap-8 justify-center text-black font-josefin font-semibold lg:text-2xl text-sm p-2">
         <div className="flex flex-col justify-center items-center gap-2  text-center col-span-1">
           <img src={icon1} alt="apartments" className="lg:w-[5dvw]  w-1/2" />
           <h2>Broj stanova</h2>

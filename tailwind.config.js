@@ -7,6 +7,7 @@ export default {
         'hero-pattern': "url('/src/assets/livingRoom.jpg')",
       },
       fontFamily: {
+        josefin: ['Josefin Sans', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
         naslov: ['TeXGyreAdventor', 'sans-serif'],
         bebasNeue: ['Bebas Neue', 'sans-serif'],

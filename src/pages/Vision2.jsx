@@ -8,7 +8,7 @@ const Vision = () => {
   return (
     <section
       ref={ref}
-      className="w-screen lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-8 p-10 lg:p-20 lg:pr-40 lg:pl-40 overflow-x-hidden text-start"
+      className="w-screen lg:flex lg:flex-row lg:justify-around lg:items-center flex-col justify-center items-stretch gap-8 p-10 lg:p-20 lg:pr-40 lg:pl-40 overflow-x-hidden text-start font-josefin"
     >
       <div
         className="lg:w-[55vw] w-full  "

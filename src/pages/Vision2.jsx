@@ -32,26 +32,22 @@ const Vision = () => {
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
       >
-        <h1 className=" text-lg pt-6">
-          U podzemnoj etaži Lamele A predviđeno je 10 garažnih mjesta i ostave
-          za stanare. Kolni pristup podzemnoj etaži je preko rampe sa južne
-          strane objekta, a pješački preko stubišta i dizala sa sjeverne strane
-          objekta .
-        </h1>
-        <h2 className="text-lg ">
-          Poslovni prostor u prizemlju otvoren je ostakljenim plohama prema jugu
-          a ulaz u poslovne prostore omogućeni su sa istoka i sjevera.
-        </h2>
-        <p className="text-lg ">
+        <h1 className=" text-lg pt-5">
           Glavni ulaz u stambeni dio zgrade smješten je u prizemlju, sa sjeverne
           strane, gdje se ulazi u vertikalnu komunikaciju koja povezuje sve
-          etaže a sastoji se od dvokrakog stubišta i dizala.
-        </p>
-        <p>
-          <b>Lamela B</b> je podzemna garaža sa parkiranjem na krovnoj ploči. U
-          podzemnom dijelu nalazi se 8 samostalnih garaža do kojih se dolazi
-          zajedničkom rampom. U nadzemnom dijelu osigurano je 11 parkirnih
-          mjesta , a cijeli objekt se integrira u definirane parterne površine.
+          etaže, a sastoji se od dvokrakog stubišta i dizala. U nadzemnom dijelu
+          osigurano je 31 parkirno mjesto , a cijeli objekt se integrira u
+          definirane parterne površine.
+        </h1>
+        <h2 className="text-lg ">
+          Stambeni dio se sastoji od 18 stanova, od kojih su dva PENTHOUSE,
+          kvadrature 127m2 i 164 m2.
+        </h2>
+        <p className="text-lg ">
+          Karakterističnu etažu čine četiri stana , dva dvosobna , jedan
+          jednosobni i jedan trosobni, kvadrature od 45m2 do 96m2. Svaki stan
+          karakterizira maksimalna iskoristivost prostora, sukladno potrebama
+          suvremenog stanovanja.
         </p>
       </div>
     </section>

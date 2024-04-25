@@ -18,29 +18,24 @@ const Vision = () => {
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
       >
-        <h1 className=" text-4xl font-semibold font-josefin text-start">
-          Pronađite savršen dom za sebe i svoju obitelj!
-        </h1>
-        <h2 className="text-2xl font-medium text-start">
-          Stambeno poslovni prostor
-        </h2>
         <div className=" text-start">
-          Stambena zgrada sa poslovnim prostorom u prizemlju smještena je u
-          Ulici Mile Bošnjaka i dio je manje urbane cjeline . Sastoji se od
-          dvije lamele, lamela A i lamela B :
-          <p className=" italic font-bold">
-            -Lamala A je projektirana kao stambeno poslovni objekt.
-          </p>{' '}
-          <p className="italic font-bold">
-            -Lamela B je podrumski objekt u kome se nalazi garaža.
-          </p>
+          Stambeno poslovna zgrada „Dolac Grad“ smještena u Ulici viteza Mile
+          Bošnjaka i dio je manje urbane cjeline površine 3.600 m2. Zgrada se
+          nalazi u samom centru grada te u neposrednoj blizini vrtića, škole,
+          crkve, doma zdravlja i supermarketa.
         </div>
+        <p className="font-bold ">IDEALNO MJESTO ZA ŽIVOT!</p>
         <p>
-          Lamela A je navedeni objekt pretežito je stambene namjene sa stanovima
-          na pet etaža, dok je etaža prizemlja poslovne namjene, a predviđena je
-          i jedna podzemna etaža u kojoj je smještena garaža. S južne strane
-          nalazi se rampa koja je zajednička za spuštanje u garaže lamele A i
-          lamele B.
+          Lokacija novogradnje u Posušju idealna je za obitelji i parove koji
+          žele biti u neposrednoj blizini Jadranskog mora, ali istovremeno
+          uživati u tišini i miru manjeg mjesta koje pruža mnoge sadržaje.
+        </p>
+        <p>
+          Sastoji se od podzemne etaže, prizemlja i 5 stambenih etaža. U
+          podzemnoj etaži se nalaze ostave za sve stambene jedinice, 10
+          parkirnih mjesta i 8 garaža. Kolni pristup podzemnoj etaži je preko
+          rampe sa južne strane objekta, a pješački preko stubišta i dizala sa
+          sjeverne strane objekta .{' '}
         </p>
       </div>
       <div

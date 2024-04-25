@@ -16,6 +16,7 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
     hall_size,
     pantry_size,
     laundryroom_size,
+    terrace_size,
     tip,
     sobnost,
     tlocrt,
@@ -116,14 +117,23 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
                       <td className="px-8 py-2">{hall_size}</td>
                     </tr>
                   )}
+
                   <tr className="odd:bg-gray-50  even:bg-gray-300">
                     <td className="px-4 py-2">Kupaonica</td>
                     <td className="px-8 py-2">{bathrooms_size}</td>
                   </tr>
-                  <tr className="odd:bg-gray-50  even:bg-gray-300">
-                    <td className="px-4 py-2">Loggia</td>
-                    <td className="px-8 py-2">{loggia_size}</td>
-                  </tr>
+                  {loggia_size && (
+                    <tr className="odd:bg-gray-50  even:bg-gray-300 ">
+                      <td className="px-4 py-2">Loggia</td>
+                      <td className="px-8 py-2">{loggia_size}</td>
+                    </tr>
+                  )}
+                  {terrace_size && (
+                    <tr className="odd:bg-gray-50  even:bg-gray-300 ">
+                      <td className="px-4 py-2">Terasa</td>
+                      <td className="px-8 py-2">{terrace_size}</td>
+                    </tr>
+                  )}
                   <tr className="font-bold bg-svjetlozelena text-bijela">
                     <td className="px-4 py-2">Površina</td>
                     <td className="px-8 py-2">{area_sqm}</td>

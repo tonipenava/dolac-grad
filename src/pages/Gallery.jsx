@@ -1,4 +1,3 @@
-import React from 'react';
 import EmblaCarousel from '../components/EmblaCarousel';
 
 // Import images from assets folder
@@ -35,11 +34,7 @@ const Gallery = () => {
       id="gallery"
       className="w-screen flex flex-col justify-center items-center text-zinc-50 font-naslov rounded-tr-3xl rounded-bl-3xl pt-4 pb-16"
     >
-      <EmblaCarousel
-        slides={SLIDES}
-        options={OPTIONS}
-        className=" lg:overflow-visible"
-      />
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
     </section>
   );
 };

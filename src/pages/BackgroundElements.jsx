@@ -5,6 +5,7 @@ import icon2 from '../assets/icon-building.png';
 import icon3 from '../assets/icon-poslovni.png';
 import icon4 from '../assets/icon-parking.png';
 import icon5 from '../assets/icon-garage.png';
+import icon6 from '../assets/garageClosed.png';
 import Number from '../components/Number';
 
 const BackgroundElements = () => {
@@ -45,11 +46,18 @@ const BackgroundElements = () => {
             {isInView && <Number classname="text-3xl" n={31} />}
           </h3>
         </div>
-        <div className="flex flex-col justify-center items-center  text-center ">
+        <div className="flex flex-col justify-center items-center gap-2 text-center col-span-1">
           <img src={icon5} alt="apartments" className="lg:w-[5dvw] w-1/2 " />
-          <h2>Garažnih mjesta</h2>
+          <h2>Garaža</h2>
           <h3 className="text-4xl font-bold text-zelena">
             {isInView && <Number classname="text-3xl" n={8} />}
+          </h3>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-2 text-center col-span-1">
+          <img src={icon6} alt="apartments" className="lg:w-[5dvw] w-1/2 " />
+          <h2>Garažnih mjesta</h2>
+          <h3 className="text-4xl font-bold text-zelena">
+            {isInView && <Number classname="text-3xl" n={10} />}
           </h3>
         </div>
       </div>

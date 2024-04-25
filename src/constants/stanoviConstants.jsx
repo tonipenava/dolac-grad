@@ -2,6 +2,8 @@ import plan1 from '../assets/S1.png';
 import plan2 from '../assets/S2.png';
 import plan3 from '../assets/S3.png';
 import plan4 from '../assets/S4.png';
+import plan17 from '../assets/s17.jpeg';
+import plan18 from '../assets/s18.jpeg';
 import tlocrt1 from '../assets/tlocrti/t1.jpeg';
 import tlocrt2 from '../assets/tlocrti/t2.jpeg';
 import tlocrt3 from '../assets/tlocrti/t3.jpeg';
@@ -18,6 +20,8 @@ import tlocrt13 from '../assets/tlocrti/t13.jpeg';
 import tlocrt14 from '../assets/tlocrti/t14.jpeg';
 import tlocrt15 from '../assets/tlocrti/t15.jpeg';
 import tlocrt16 from '../assets/tlocrti/t16.jpeg';
+import tlocrt17 from '../assets/tlocrti/t17.jpeg';
+import tlocrt18 from '../assets/tlocrti/t18.jpeg';
 
 export const stanoviConstants = {
   floors: [
@@ -318,6 +322,53 @@ export const stanoviConstants = {
           tip: 'S16',
           sobnost: 'Trosoban',
           tlocrt: tlocrt16,
+        },
+      ],
+    },
+    {
+      floor_number: 5,
+      apartments: [
+        {
+          number: 17,
+          area_sqm: 163.83,
+          bedrooms: 3,
+          bathrooms: 3,
+          livingroom_size: 56.26,
+          pantry_size: 2.97,
+          wc_size: 1.97,
+          hall_size: 19.95,
+          bathrooms_size: 5.49,
+          bathrooms_size2: 4.17,
+          laundryroom_size: 4.22,
+          bedrooms_size: 18.43,
+          bedrooms_size2: 10.88,
+          bedrooms_size3: 12.51,
+          loggia_size: 26.88,
+          tip: 'S17',
+          sobnost: 'Trosoban',
+          plan_image: plan17,
+          tlocrt: tlocrt17,
+        },
+        {
+          number: 18,
+          area_sqm: 126.97,
+          bedrooms: 3,
+          bathrooms: 3,
+          livingroom_size: 39.1,
+          pantry_size: 3.73,
+          wc_size: 2.04,
+          hall_size: 13.41,
+          bathrooms_size: 5.69,
+          bathrooms_size2: 3.49,
+          laundryroom_size: 3.68,
+          bedrooms_size: 16.93,
+          bedrooms_size2: 13.02,
+          bedrooms_size3: 16.18,
+          terrace_size: 9.7,
+          tip: 'S18',
+          sobnost: 'Trosoban',
+          plan_image: plan18,
+          tlocrt: tlocrt18,
         },
       ],
     },

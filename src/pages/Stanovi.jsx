@@ -17,7 +17,7 @@ const Stanovi = () => {
           }}
           className="textStanovi lg:text-6xl text-3xl pt-4  text-smedja text-start w-[80%] font-josefin font-medium"
         >
-          Odaberite stan koji odgovara vašim potrebama
+          Odaberite stan po Vašoj mjeri
         </h1>
         <div>
           <ApartmentList />

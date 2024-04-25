@@ -9,8 +9,9 @@ import Vision2 from './pages/Vision2';
 import BackgroundElements from './pages/BackgroundElements';
 import Gallery from './pages/Gallery';
 import Parking from './pages/Parking';
-import Garage from './pages/Garage';
+
 import Copyright from './components/Copyrights';
+import PlanGallery from './pages/PlanGallery';
 
 function App() {
   return (
@@ -18,12 +19,14 @@ function App() {
       <Navbar />
       <Home />
       <Vision />
+
+      <PlanGallery />
       <Parking />
       <Vision2 />
       <Gallery />
       <BackgroundElements />
       <Stanovi />
-      <Garage />
+
       <Contact />
       <Footer />
       <Copyright />

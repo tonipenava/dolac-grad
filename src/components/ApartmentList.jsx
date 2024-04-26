@@ -49,9 +49,7 @@ const ApartmentList = () => {
                     className=" w-64 "
                   />
                   <div className="flex justify-around items-center">
-                    <h3 className="text-xl mt-2  p-2">
-                      {apartment.sobnost} Stan
-                    </h3>
+                    <h3 className="text-xl mt-2  p-2">{apartment.sobnost}</h3>
                     <p>
                       <img src={arrow} className="w-6 h-6 " />
                     </p>

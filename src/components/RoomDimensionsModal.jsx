@@ -23,32 +23,34 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
   } = apartment;
 
   return (
-    <div className="fixed inset-0 z-50 flex justify-center items-center w-screen">
+    <div className="fixed inset-0 z-50 flex justify-center items-center w-screen font-josefin">
       <div
         className="absolute inset-0 bg-black opacity-50 "
         onClick={onClose}
       ></div>
-      <div className="relative bg-white rounded-br-xl rounded-tl-xl w-[90%] h-[90%] scroll-m-0 flex flex-col p-5 overflow-y-auto">
-        <button className="absolute top-0 right-0 p-2" onClick={onClose}>
-          <svg
-            className="w-6 h-6 text-gray-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
+      <div className="sticky  right-3 bg-white rounded-br-xl rounded-tl-xl w-[90%] h-[90%] scroll-m-0 flex flex-col  overflow-y-auto">
+        <div className="w-full p-5 flex justify-between sticky top-0 bg-white">
+          <h1 className="text-3xl text-center flex-grow">
+            {apartment.sobnost}
+          </h1>
+          <button className="flex items-center" onClick={onClose}>
+            <svg
+              className="w-6 h-6 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
         <div className="flex flex-col">
-          <h3 className="text-3xl font-medium leading-6 text-zelena text-center p-5 ">
-            {apartment.sobnost} stan
-          </h3>
-          <div className="lg:flex lg:flex-row flex-col  justify-center items-center w-100%">
+          <div className="lg:flex lg:flex-row flex-col gap-5 justify-center items-center w-100%">
             <div className="flex justify-center items-center lg:w-[65%] mx-auto">
               <img
                 src={plan_image}
@@ -143,7 +145,7 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img src={tlocrt} className="lg:w-[60%] h-50%" />
+            <img src={tlocrt} className="lg:w-[60%] h-50% pt-10 pb-10" />
           </div>
         </div>
       </div>

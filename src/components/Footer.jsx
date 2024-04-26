@@ -53,7 +53,7 @@ const Footer = () => {
             <h1>Jakov Jukić</h1>
             <div className="flex justify-center items-center ">
               <SlScreenSmartphone />
-              <a href="tel:+387 63 828 541">+387 63 828 541</a>
+              <a href="tel:+387 63 823 541">+387 63 823 541</a>
             </div>
             <div>
               <a href="mailto:jakov@dolac-grad.ba">jakov@dolac-grad.ba</a>

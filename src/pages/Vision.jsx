@@ -24,12 +24,7 @@ const Vision = () => {
           nalazi u samom centru grada te u neposrednoj blizini vrtića, škole,
           crkve, doma zdravlja i supermarketa.
         </div>
-        <p className="font-bold ">IDEALNO MJESTO ZA ŽIVOT!</p>
-        <p>
-          Lokacija novogradnje u Posušju idealna je za obitelji i parove koji
-          žele biti u neposrednoj blizini Jadranskog mora, ali istovremeno
-          uživati u tišini i miru manjeg mjesta koje pruža mnoge sadržaje.
-        </p>
+
         <p>
           Sastoji se od podzemne etaže, prizemlja i 5 stambenih etaža. U
           podzemnoj etaži se nalaze ostave za sve stambene jedinice, 10

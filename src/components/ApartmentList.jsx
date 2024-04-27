@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import RoomDimensionsModal from './RoomDimensionsModal';
 import { stanoviConstants } from '../constants/stanoviConstants';
 import ruller from '../assets/ruller-w.png';
 import arrow from '../assets/arrow-w.png';
 import bed from '../assets/bed-w.png';
 import toilet from '../assets/toilet-w.png';
-import { useInView } from 'react-intersection-observer';
+import { useInView } from 'framer-motion';
 
 const ApartmentList = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -20,10 +20,11 @@ const ApartmentList = () => {
   const handleCloseModal = () => {
     setModalOpen(false);
   };
-  const { ref, inView } = useInView({ triggerOnce: true });
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="w-screen overflow-x-hidden">
+    <div className="w-screen overflow-x-hidden" ref={ref}>
       {stanoviConstants.floors.map((floor) => (
         <div
           key={floor.floor_number}
@@ -34,16 +35,19 @@ const ApartmentList = () => {
               {floor.floor_number}. Kat
             </h2>
           </div>
-          <div className="lg:grid lg:grid-cols-4 gap-10 flex flex-col items-center justify-centar  ">
+          <div className="lg:grid lg:grid-cols-4 gap-10 flex flex-col items-center justify-centar ">
             {floor.apartments.map((apartment) => (
               <div
-                style={{ transitionDuration: '0.4s' }}
+                style={{
+                  transform: isInView ? 'none' : 'translateX(+400px)',
+                  opacity: isInView ? 1 : 0,
+                  transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s',
+                }}
                 key={apartment.number}
                 className="  flex flex-col w-fit justify-center items-center  text-bijela bg-svjetlozelena border-2 cursor-pointer shadow-lg hover:shadow-lg hover:shadow-black hover:transform  hover:bg-smedja hover:rounded-bl-3xl hover:rounded-tr-3xl hover:rounded-tl-none hover:rounded-br-none  rounded-br-3xl rounded-tl-3xl border-none overflow-hidden font-josefin"
               >
                 <button onClick={() => handleApartmentClick(apartment)}>
                   <img
-                    ref={ref}
                     src={apartment.plan_image || '/no-image.jpg'}
                     alt={`Plan for Apartment ${apartment.number}`}
                     className=" w-64 "

@@ -30,7 +30,7 @@ const Footer = () => {
     }
   };
   return (
-    <footer className=" rounded-t-lg lg:rounded-none border-t-2 border-svjetlozelena bg-bijela text-center text-zinc-900  pt-5 pb-5 flex flex-col lg:flex-row lg:justify-center lg:gap-[30%] lg:items-start font-josefin font-medium ">
+    <footer className=" rounded-t-3xl lg:rounded-none border-t-2 border-svjetlozelena bg-bijela text-center text-zinc-900  pt-5 pb-5 flex flex-col lg:flex-row lg:justify-center lg:gap-[30%] lg:items-start font-josefin font-medium ">
       <div className="flex flex-col justify-center items-center gap-2 pb-6 ">
         <div>
           <h2 className=" text-bold">Dolac Grad d.o.o.</h2>

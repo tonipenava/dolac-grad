@@ -41,7 +41,9 @@ const ApartmentList = () => {
                 style={{
                   transform: isInView ? 'none' : 'translateX(+400px)',
                   opacity: isInView ? 1 : 0,
-                  transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s',
+                  transition: isInView
+                    ? 'all 1s cubic-bezier(0.17, 0.55, 0.55, 1)'
+                    : 'transform 0.4s cubic-bezier(0.17, 0.55, 0.55, 1), opacity 0.5s cubic-bezier(0.17, 0.55, 0.55, 1)',
                 }}
                 key={apartment.number}
                 className="  flex flex-col w-fit justify-center items-center  text-bijela bg-svjetlozelena border-2 cursor-pointer shadow-lg hover:shadow-lg hover:shadow-black hover:transform  hover:bg-smedja hover:rounded-bl-3xl hover:rounded-tr-3xl hover:rounded-tl-none hover:rounded-br-none  rounded-br-3xl rounded-tl-3xl border-none overflow-hidden font-josefin"

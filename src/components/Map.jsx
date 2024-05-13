@@ -45,7 +45,7 @@ const Map = () => {
         />
         <Marker position={position} icon={customIcon}>
           <Popup>
-            <div className=" font-textTitle flex flex-col">
+            <div className=" font-naslov flex flex-col">
               <div className="flex items-center justify-around">
                 Dolac Grad <img src={badge} alt="Badge" className="w-[40px]" />
               </div>

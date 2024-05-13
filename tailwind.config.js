@@ -3,15 +3,10 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/src/assets/livingRoom.jpg')",
-      },
       fontFamily: {
         josefin: ['Josefin Sans', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
         naslov: ['TeXGyreAdventor', 'sans-serif'],
-        bebasNeue: ['Bebas Neue', 'sans-serif'],
-        textTitle: ['Libre Caslon Text', 'serif'],
       },
       colors: {
         smedja: '#5F574A',

@@ -77,11 +77,13 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <img
-          src={logo}
-          alt="Logo"
-          className="bg-contain pl-20 pr-20  lg:w-[450px]"
-        />
+        <div onClick={() => handleItemClick('home')}>
+          <img
+            src={logo}
+            alt="Logo"
+            className="bg-contain pl-20 pr-20  lg:w-[450px] cursor-pointer"
+          />
+        </div>
       </div>
     </footer>
   );

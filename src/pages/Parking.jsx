@@ -13,7 +13,7 @@ const Parking = () => {
         transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
       }}
     >
-      <p className="w-[80%] font-bold">Funkcionalnost u svakom detalju</p>
+      <h2 className="w-[80%] font-bold">Funkcionalnost u svakom detalju</h2>
       <p className="w-[80%]">
         Savršen sklad visokokvalitetnih materijala i pažljivo biranih detalja
         čini našu novogradnju u Posušju jedinstvenom. Svaki kutak naših stanova

@@ -20,7 +20,7 @@ const Vision = () => {
       >
         <img
           src={zgradaIzvana}
-          alt="Building"
+          alt="Zgrada 2"
           className="border-b-8 border-l-8 p-4 border-svjetlozelena  "
         />
       </div>
@@ -32,17 +32,17 @@ const Vision = () => {
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
       >
-        <h1 className=" text-lg pt-5">
+        <p className=" text-lg pt-5">
           Glavni ulaz u stambeni dio zgrade smješten je u prizemlju, sa sjeverne
           strane, gdje se ulazi u vertikalnu komunikaciju koja povezuje sve
           etaže, a sastoji se od dvokrakog stubišta i dizala. U nadzemnom dijelu
           osigurano je 31 parkirno mjesto , a cijeli objekt se integrira u
           definirane parterne površine.
-        </h1>
-        <h2 className="text-lg ">
+        </p>
+        <p className="text-lg ">
           Stambeni dio se sastoji od 18 stanova, od kojih su dva PENTHOUSE,
           kvadrature 127m2 i 164 m2.
-        </h2>
+        </p>
         <p className="text-lg ">
           Karakterističnu etažu čine četiri stana , dva dvosobna , jedan
           jednosobni i jedan trosobni, kvadrature od 45m2 do 96m2. Svaki stan

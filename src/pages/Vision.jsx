@@ -18,12 +18,12 @@ const Vision = () => {
           transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
       >
-        <div className=" text-start">
+        <p className=" text-start">
           Stambeno poslovna zgrada „Dolac Grad“ smještena u Ulici viteza Mile
           Bošnjaka i dio je manje urbane cjeline površine 3.600 m2. Zgrada se
           nalazi u samom centru grada te u neposrednoj blizini vrtića, škole,
           crkve, doma zdravlja i supermarketa.
-        </div>
+        </p>
 
         <p>
           Sastoji se od podzemne etaže, prizemlja i 5 stambenih etaža. U

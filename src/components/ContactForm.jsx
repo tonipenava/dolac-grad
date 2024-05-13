@@ -46,9 +46,9 @@ export const ContactForm = () => {
       onSubmit={sendEmail}
       className="flex flex-col gap-4 items-center text-xl lg:w-1/3 w-[80vw] h-fit lg:h-[69dvh] bg-bijela border-4 border-svjetlozelena p-4 font-medium rounded-tr-3xl rounded-bl-3xl font-josefin "
     >
-      <h1 className="text-2xl text-black font-semibold font-josefin">
+      <h2 className="text-2xl text-black font-semibold font-josefin">
         Pošalji upit
-      </h1>
+      </h2>
       <p className="text-sm text-black">
         Za više informacija o raspoloživim nekretninama, ispunite obrazac i mi
         ćemo Vas kontaktirati u najkraćem mogućem roku.

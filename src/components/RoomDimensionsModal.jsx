@@ -30,9 +30,7 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
       ></div>
       <div className="sticky  right-3 bg-white rounded-br-xl rounded-tl-xl w-[90%] h-[90%] scroll-m-0 flex flex-col  overflow-y-auto">
         <div className="w-full p-5 flex justify-between sticky top-0 bg-white">
-          <h1 className="text-3xl text-center flex-grow">
-            {apartment.sobnost}
-          </h1>
+          <p className="text-3xl text-center flex-grow">{apartment.sobnost}</p>
           <button className="flex items-center" onClick={onClose}>
             <svg
               className="w-6 h-6 text-gray-600"
@@ -60,7 +58,7 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
             </div>
             <div className="mt-4 p-5 lg:w-[30%]  h-full flex flex-col gap-4">
               <div className="text-2xl font-semibold mb-2 flex flex-col - justify-around items-center">
-                <h2> Stan: {apartment.tip}</h2>
+                <p> Stan: {apartment.tip}</p>
               </div>
 
               <table className="w-full border-spacing-1 border-none text-center ">
@@ -145,7 +143,11 @@ const RoomDimensionsModal = ({ isOpen, onClose, apartment }) => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img src={tlocrt} className="lg:w-[60%] h-50% pt-10 pb-10" />
+            <img
+              src={tlocrt}
+              className="lg:w-[60%] h-50% pt-10 pb-10"
+              alt="Tlocrt stana"
+            />
           </div>
         </div>
       </div>

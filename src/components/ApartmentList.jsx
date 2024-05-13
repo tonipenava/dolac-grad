@@ -31,9 +31,9 @@ const ApartmentList = () => {
           className="flex flex-col items-center justify-center gap-10  "
         >
           <div className=" pt-4 pb-4 mb-4 flex items-start  border-b-2 border-smedja w-[80%] ">
-            <h2 className="z-20 text-3xl text-smedja relative text-start font-josefin  pt-5">
+            <p className="z-20 text-3xl text-smedja relative text-start font-josefin  pt-5">
               {floor.floor_number}. Kat
-            </h2>
+            </p>
           </div>
           <div className="lg:grid lg:grid-cols-4 gap-10 flex flex-col items-center justify-centar ">
             {floor.apartments.map((apartment) => (
@@ -57,7 +57,7 @@ const ApartmentList = () => {
                   <div className="flex justify-around items-center">
                     <h3 className="text-xl mt-2  p-2">{apartment.sobnost}</h3>
                     <p>
-                      <img src={arrow} className="w-6 h-6 " />
+                      <img src={arrow} className="w-6 h-6 " alt="arrow" />
                     </p>
                   </div>
                   <div className="flex items-center justify-evenly p-2 pt-10  ">

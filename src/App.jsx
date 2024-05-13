@@ -15,22 +15,20 @@ import PlanGallery from './pages/PlanGallery';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Home />
       <Vision />
-
       <PlanGallery />
       <Parking />
       <Vision2 />
       <Gallery />
       <BackgroundElements />
       <Stanovi />
-
       <Contact />
       <Footer />
       <Copyright />
-    </BrowserRouter>
+    </>
   );
 }
 

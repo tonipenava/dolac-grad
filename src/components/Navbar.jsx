@@ -52,13 +52,14 @@ const Navbar = () => {
       {!isSmallScreen && (
         <ul className="hidden lg:flex lg:items-center lg:justify-start rounded-b-lg lg:gap-10 text-lg text-zinc-900 bg-zelena opacity-80 lg:bg-transparent pr-5">
           {navList.map((item) => (
-            <li
+            <div
               key={item.id}
               className="rounded-sm p-2 hover:bg-zinc-50 hover:text-svjetlozelena cursor-pointer font-medium text-center"
+              role="button"
               onClick={() => handleItemClick(item.id)}
             >
               {item.label}
-            </li>
+            </div>
           ))}
         </ul>
       )}
@@ -94,7 +95,7 @@ const Navbar = () => {
           {navList.map((item) => (
             <li
               key={item.id}
-              className="rounded-sm p-2 hover:bg-zinc-50 hover:text-svjetlozelena cursor-pointer font-medium text-center "
+              className="rounded-sm p-2 hover:bg-zinc-50 hover:text-svjetlozelena font-medium text-center "
               onClick={() => handleItemClick(item.id)}
             >
               {item.label}

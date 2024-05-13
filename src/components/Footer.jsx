@@ -1,14 +1,5 @@
-import {
-  SlSocialFacebook,
-  SlSocialInstagram,
-  SlSocialGoogle,
-  SlEnvolope,
-  SlScreenSmartphone,
-  SlLocationPin,
-} from 'react-icons/sl';
+import { SlEnvolope, SlScreenSmartphone, SlLocationPin } from 'react-icons/sl';
 import logo from '../assets/logoGold-min.png';
-
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const navList = [
@@ -33,10 +24,10 @@ const Footer = () => {
     <footer className=" rounded-t-3xl lg:rounded-none border-t-2 border-svjetlozelena bg-bijela text-center text-zinc-900  pt-5 pb-5 flex flex-col lg:flex-row lg:justify-center lg:gap-[30%] lg:items-start font-josefin font-medium ">
       <div className="flex flex-col justify-center items-center gap-2 pb-6 ">
         <div>
-          <h2 className=" text-bold">Dolac Grad d.o.o.</h2>
+          <h1 className=" text-bold">Dolac Grad d.o.o.</h1>
           <div className="flex justify-center items-center gap-4">
             <SlLocationPin />
-            <h2>Ulica Viteza Mile Bošnjaka </h2>
+            <p>Ulica Viteza Mile Bošnjaka </p>
           </div>
           <div className="flex justify-center items-center gap-4">
             <SlEnvolope />
@@ -79,7 +70,7 @@ const Footer = () => {
           {navList.map((item) => (
             <li
               key={item.id}
-              className="rounded-sm p-2 lg:hover:bg-svjetlozelena lg:hover:text-bijela duration-300 font-josefin  font-normal  text-center cursor-pointer text-base"
+              className="rounded-sm p-2 lg:hover:bg-svjetlozelena lg:hover:text-bijela duration-300 font-josefin  font-normal  text-center cursor-pointer text-base caret-transparent"
               onClick={() => handleItemClick(item.id)}
             >
               {item.label}

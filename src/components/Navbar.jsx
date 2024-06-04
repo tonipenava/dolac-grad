@@ -46,11 +46,11 @@ const Navbar = () => {
         onClick={() => handleItemClick('home')}
         className="lg:w-[1/2] w-screen flex items-center justify-start  lg:pb-3"
       >
-        <img src={logo} alt="Logo" className=" bg-cover h-auto w-[170px] p-3" />
+        <img src={logo} alt="Logo" className=" bg-cover h-auto w-[170px] p-5" />
       </div>
 
       {!isSmallScreen && (
-        <ul className="hidden lg:flex lg:items-center lg:justify-start rounded-b-lg lg:gap-10 text-lg text-zinc-900 bg-zelena opacity-80 lg:bg-transparent pr-5">
+        <ul className="hidden lg:flex lg:items-center lg:justify-start rounded-b-lg lg:gap-10 text-lg text-zinc-900 bg-zelena opacity-80 lg:bg-transparent pr-5  ">
           {navList.map((item) => (
             <div
               key={item.id}
@@ -86,11 +86,11 @@ const Navbar = () => {
       {isSmallScreen && (
         <ul
           style={{
-            height: isMenuOpen ? '100vh' : '0px',
+            height: isMenuOpen ? '40vh' : '0px',
             transition: 'height 0.25s ease-in-out',
             overflow: 'hidden',
           }}
-          className="lg:hidden text-xl text-zinc-900 bg-bijela opacity-80 w-screen  absolute top-[12vh] grid grid-cols-1 grid-rows-5 gap-1 "
+          className="lg:hidden text-xl text-zinc-900 bg-bijela opacity-80 w-screen absolute top-[12vh]  grid grid-cols-1 grid-rows-5 gap-1 "
         >
           {navList.map((item) => (
             <li

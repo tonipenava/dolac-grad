@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           <div className="flex justify-center items-center gap-4">
             <SlEnvolope />
-            <a href="mailto:info@dolac-grad.ba">info@dolac-grad.com</a>
+            <a href="mailto:info@dolac-grad.ba">info@dolac-grad.ba</a>
           </div>
         </div>
         <div

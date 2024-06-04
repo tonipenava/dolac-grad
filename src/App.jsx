@@ -9,7 +9,6 @@ import Vision2 from './pages/Vision2';
 import BackgroundElements from './pages/BackgroundElements';
 import Gallery from './pages/Gallery';
 import Parking from './pages/Parking';
-
 import Copyright from './components/Copyrights';
 import PlanGallery from './pages/PlanGallery';
 

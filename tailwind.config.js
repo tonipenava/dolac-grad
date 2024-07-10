@@ -10,7 +10,7 @@ export default {
       },
       colors: {
         smedja: '#5F574A',
-        svjetlosmedja: '#D3AC8B',
+        svjetlosmedja: '#635641',
         bez: '#E6C5AD',
         zelena: '#374832',
         svjetlozelena: '#588764',
